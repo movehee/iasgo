@@ -1,0 +1,22 @@
+div.popupWrap {position: relative;width:500px;border: 2px solid #09397d;}
+
+div.popupWrap h1 {height: 32px;padding: 9px 50px 11px 15px;font-size:22px;line-height:30px;color:#fff;background-color: #09397d;}
+div.popupWrap h1:before {padding-right: 5px;font-weight: 900;font-family: "Font Awesome 5 Free" !important;}
+
+div.popupWrap div.popupCon {padding:20px;}
+div.popupWrap p.close {position: absolute;right: 0;top: 0;width: 50px;height: 50px;}
+div.popupWrap p.close a {display: block;height: 30px;padding: 8px 0 12px;color: #fff;text-decoration: none;text-align: center;font-size: 22px;line-height: 30px;background-color:rgba(0,0,0,.7);}
+
+div.popupWrap div.scrollArea {overflow-x: hidden;overflow-y: scroll;height: 300px;margin-top: 20px;}
+div.popupWrap div.scrollArea th,
+div.popupWrap div.scrollArea td {padding: 5px;}
+
+div.searchArea {position: relative;padding: 20px 40px;background-color: #f2f2f2;}
+div.searchArea .formArea {overflow: hidden;position: relative;padding-right: 55px;}
+div.searchArea .formArea {}
+div.searchArea .formArea dt,
+div.searchArea .formArea dd {float: left;}
+div.searchArea .formArea dt {width: 50px;font-weight: bold;line-height: 30px;text-align: center;font-size: 14px;}
+div.searchArea .formArea dd input[type=text] {width: 248px;margin-left: 5px;}
+
+div.searchArea .btnSearch {position: absolute;right: 40px;bottom: 20px;}

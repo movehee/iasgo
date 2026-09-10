@@ -1,0 +1,38 @@
+div.popupWrap div.btnArea {padding: 20px 0;margin-top: 10px;border-top: 1px solid #e1e4e8;}
+div.popupWrap div.btnArea input {padding:0 10px 4px;}
+
+div.popupWrap p.close {position: absolute;right: 0;top: 0;width: 50px;}
+div.popupWrap p.close a {display: block;height: 16px;padding: 17px 0;text-align: center;}
+
+div#dataUpload {position: absolute;right: 10px;top: -1px;width: 1700px;background-color: #fff;}
+
+div#dataUpload h1 {position: absolute;left: 0;top: -7px;width: 1700px;padding: 14px 0 12px 20px;border-bottom: 1px solid #e1e4e8;color: #425880;background: url('/Astellas/admin/image/popupBg.png') right 0 no-repeat;}
+
+div#dataUpload div.popupCon {padding-top: 69px;border: 1px solid #e1e4e8;}
+
+div#dataUpload table {}
+div#dataUpload th,
+div#dataUpload td {padding: 3px 10px;text-align: left;}
+div#dataUpload th {padding-left:20px;letter-spacing:-1px;}
+
+div#dataUpload td > * {float: left;vertical-align: top;}
+div#dataUpload td span,
+div#dataUpload td label {line-height: 26px;}
+div#dataUpload td span {padding: 0 3px;}
+
+div#dataUpload td input[type=text] {width: 158px;}
+div#dataUpload td input[type=file] {width: 158px;}
+div#dataUpload td input[type=radio] {margin: 8px 5px 0 15px;}
+div#dataUpload td input[type=radio]:first-child {margin-left: 0;}
+div#dataUpload td select {width: 180px;}
+
+div#dataUpload td.phone input {width: 30px;}
+
+div#dataUpload td.email input[type=text] {width: 130px;}
+div#dataUpload td.email input.clear {width: 158px;}
+div#dataUpload td.email .clear {margin-top: 5px;}
+
+
+
+
+ 

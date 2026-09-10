@@ -1,0 +1,535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 7]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie7"><![endif]-->
+<!--[if IE 8]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie8"><![endif]-->
+<!--[if IE 9]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="kor" xml:lang="kor"><!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>관리자 | 한국자동차공학회</title>	
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link type="text/css" rel="stylesheet" href="/css/common_v3.css" />
+<link type="text/css" rel="stylesheet" href="http://jajaknew.ksae.org/css/ksae_jajak_sub.css" />
+<link type="text/css" rel="stylesheet" href="/admin/css/admin_v2.css" />
+<!--[if lt IE 8]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js">IE7_PNG_SUFFIX=".png";</script>
+<![endif]-->
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+<script type="text/javascript" src="/admin/script/user_admin.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+jQuery(function($) {
+
+});
+//]]>
+</script>
+</head>
+
+<body>
+
+<div class="popupWrap_admin" id="popupMemberInfo">
+	<h1>개인회원 등록</h1>
+	<div class="popupCon">
+
+		<div class="scrollArea">
+			
+			<div class="formArea">
+				<form id="" name="" action="" method="post">
+					<fieldset>
+						<legend>회원정보</legend>
+						<h2 class="tm0 fl">기본 정보</h2>
+						<p class="fr"><i class="essen" title="필수"></i>부분은 필수입력 사항입니다.</p>
+						<table class="tblDef inputTbl">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><label for="" class="essen" title="필수">아이디</label></th>
+									<td class="multi">
+										<input type="text" name="" id="">
+										<span class="btn"><a href="#" class="btnGrey btnSmall">중복확인</a></span>
+										<span class="note clear">(영문·숫자 4자~20자 이내, 공백·특수문자 불가)</span>
+									</td>
+								</tr>
+								<tr>
+									<th><label for="" class="essen" title="필수">비밀번호</label></th>
+									<td>
+										<input type="password" name="" id="" style="width: 60%;">
+										<span class="note">(영문·숫자 4자~20자 이내, 공백·특수문자 불가)</span>
+									</td>
+								</tr>
+								<tr>
+									<th><label for="" class="essen" title="필수">비밀번호 확인</label></th>
+									<td>
+										<input type="password" name="" id="" style="width: 60%;">
+									</td>
+								</tr>
+								<tr>
+									<th><label for="">사진등록</label></th>
+									<td>
+										<div class="selectFile">
+											<p><input name="" id="fileName" value="Select File" type="text" style="width:300px;"></p>
+											<p class="withIcon"><i class="fas fa-search"></i><input class="opacity0" name="" id="figure_file" onchange="document.getElementById('fileName').value=this.value;" type="file"></p>
+										</div>
+										<p class="note">(크기: 100 * 130 pixel , 용량 : 20kbyte 미만)</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="tblDef inputTbl">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><label for="" class="essen" title="필수">이름(국문)</label></th>
+									<td>
+										<input type="text" name="" id="" style="width: 300px;">
+										<span class="note">(이름은 붙여서 입력하세요)</span>
+									</td>
+								</tr>
+								<tr>
+									<th><span class="essen" title="필수">이름(영문)</span></th>
+									<td>
+										<dl class="overHidden">
+											<dt><span class="essen" title="필수">Title</span></dt>
+											<dd class="multi">
+												<input type="radio" name="" id=""><label for="">Professor</label>
+												<input type="radio" name="" id=""><label for="">Doctor</label>
+												<input type="radio" name="" id=""><label for="">Mr.</label>
+												<input type="radio" name="" id=""><label for="">Ms.</label>
+											</dd>
+											<dt><label for="" class="essen" title="필수">First Name</label></dt>
+											<dd><input type="text" name="" id="" style="width: 200px;"></dd>
+											<dt><label for="" class="essen" title="필수">Last Name</label></dt>
+											<dd><input type="text" name="" id="" style="width: 200px;"></dd>
+										</dl>
+									</td>
+								</tr>
+								<tr>
+									<th>성별</th>
+									<td class="multi">
+										<input type="radio" name="" id=""><label for="">남성</label>
+										<input type="radio" name="" id=""><label for="">여성</label>
+									</td>
+								</tr>
+								<tr>
+									<th><label for="">생년월일</label></th>
+									<td class="multi">
+										<select name="" id="">
+											<option value="">년도</option>
+										</select>
+										<span>년</span>
+										<select name="" id="">
+											<option value="">월</option>
+										</select>
+										<span>월</span>
+										<select name="" id="">
+											<option value="">일</option>
+										</select>
+										<span>일</span>
+										<input type="radio" name="" id=""><label for="">내국인</label>
+										<input type="radio" name="" id=""><label for="">외국인</label>
+									</td>
+								</tr>
+								<tr>
+									<th><label for="" title="필수" class="essen">휴대폰번호</label></th>
+									<td>
+										<input type="text" name="" id="" style="width: 70%;">
+										<span class="note">(예 : 011-1234-5678, 해외는 국가 번호를 기입하시오.) </span>
+									</td>
+								</tr>
+								<tr>
+									<th><label for="" title="필수" class="essen">E-mail</label></th>
+									<td>
+										<input type="text" name="" id="" style="width: 70%;">
+									</td>
+								</tr>
+								<tr>
+									<th><span class="essen">회원구분</span></th>
+									<td class="multi">
+										<input type="radio" name="" id=""><label for="">정회원</label>
+										<input type="radio" name="" id=""><label for="">학생회원</label>
+										<input type="radio" name="" id=""><label for="">종신회원</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+
+						<h2>학력 정보</h2>
+						<table class="tblDef inputTbl">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><span class="essen" title="필수">최종학력</span></th>
+									<td class="multi">
+										<input type="radio" name="" id=""><label for="">고졸</label>
+										<input type="radio" name="" id=""><label for="">학사(전문학사 포함)</label>
+										<input type="radio" name="" id=""><label for="">석사</label>
+										<input type="radio" name="" id=""><label for="">박사</label>
+										<input type="radio" name="" id=""><label for="">재학생</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="tblDef inputTbl">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 40%;">
+								<col style="width: 40%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th rowspan="2">학교</th>
+									<th><span class="essen" title="필수">학교명</span></th>
+									<th><span class="essen" title="필수">전공</span></th>
+								</tr>
+								<tr>
+									<th colspan="2"><span class="essen" title="필수">기간</span></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th rowspan="2">대학교</th>
+									<td class="ac"><input type="text" name="" id="" style="width: 90%;"></td>
+									<td class="ac"><input type="text" name="" id="" style="width: 90%;"></td>
+								</tr>
+								<tr>
+									<td colspan="2" class="ac">
+										<input type="text" name="" id="" style="width: 30px;"><span>년</span>
+										<input type="text" name="" id="" style="width: 30px;"><span>월 ~</span>
+										<input type="text" name="" id="" style="width: 30px;"><span>년</span>
+										<input type="text" name="" id="" style="width: 30px;"><span>월</span>
+									</td>
+								</tr>
+								<tr>
+									<th rowspan="2">대학원(석사)</th>
+									<td class="ac"><input type="text" name="" id="" style="width: 90%;"></td>
+									<td class="ac"><input type="text" name="" id="" style="width: 90%;"></td>
+								</tr>
+								<tr>
+									<td colspan="2" class="ac">
+										<input type="text" name="" id="" style="width: 30px;"><span>년</span>
+										<input type="text" name="" id="" style="width: 30px;"><span>월 ~</span>
+										<input type="text" name="" id="" style="width: 30px;"><span>년</span>
+										<input type="text" name="" id="" style="width: 30px;"><span>월</span>
+									</td>
+								</tr>
+								<tr>
+									<th rowspan="2">
+										대학원(박사)<br />
+										<input type="radio" name="" id="" class="lm0"><label for="">취득</label>
+										<input type="radio" name="" id="" class="lm5"><label for="">수료</label>
+									</th>
+									<td class="ac">
+										<input type="text" name="" id="" style="width: 90%;">
+									</td>
+									<td class="ac"><input type="text" name="" id="" style="width: 90%;"></td>
+								</tr>
+								<tr>
+									<td colspan="2" class="ac">
+										<input type="text" name="" id="" style="width: 30px;"><span>년</span>
+										<input type="text" name="" id="" style="width: 30px;"><span>월 ~</span>
+										<input type="text" name="" id="" style="width: 30px;"><span>년</span>
+										<input type="text" name="" id="" style="width: 30px;"><span>월</span>
+									</td>
+								</tr>
+								<tr>
+									<th colspan="2">국문 논문심사 가능 여부</th>
+									<td class="multi">
+										<input type="radio" name="" id=""><label for="">가능</label>
+										<input type="radio" name="" id=""><label for="">불가능</label>
+									</td>
+								</tr>
+								<tr>
+									<th colspan="2">영문 논문심사 가능 여부</th>
+									<td class="multi">
+										<input type="radio" name="" id=""><label for="">가능</label>
+										<input type="radio" name="" id=""><label for="">불가능</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<dl class="overHidden">
+							<dt class="boldTit">• 학생증 또는 재학증명서 파일 :</dt>
+							<dd>
+								<div class="selectFile">
+									<p><input name="" id="fileName" value="Select File" type="text" style="width:250px;"></p>
+									<p class="withIcon"><i class="fas fa-search"></i><input class="opacity0" name="" id="figure_file" onchange="document.getElementById('fileName').value=this.value;" type="file"></p>
+								</div>
+							</dd>
+						</dl>
+
+
+
+						<h2>선택정보</h2>
+						<dl>
+							<dt class="boldTit">• 근무처(국문)</dt>
+							<dd>
+								<table class="tblDef inputTbl">
+									<colgroup>
+										<col style="width: 20%;">
+										<col style="width: 30%;">
+										<col style="width: 20%;">
+										<col style="width: 30%;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th><label for="" class="essen" title="필수">회사명(학교)</label></th>
+											<td><input type="text" name="" id="" style="width: 90%;"></td>
+											<th><label for="" class="essen" title="필수">부서명(학과)</label></th>
+											<td><input type="text" name="" id="" style="width: 90%;"></td>
+										</tr>
+										<tr>
+											<th><label for="" class="essen" title="필수">직위</label></th>
+											<td><input type="text" name="" id="" style="width: 90%;"></td>
+											<th><label for="">직급</label></th>
+											<td><input type="text" name="" id="" style="width: 90%;"></td>
+										</tr>
+										<tr>
+											<th><label for="" class="essen" title="필수">주소</label></th>
+											<td colspan="3" class="address">
+												<input type="text" name="" id="">
+												<span class="btn"><a href="#" class="btnGrey btnSmall">우편번호</a></span>
+												<input type="radio" name="" id=""><label for="">국내거주</label>
+												<input type="radio" name="" id=""><label for="">해외거주</label>
+												<input type="text" name="" id="" class="clear" style="width: 190px;">
+												<input type="text" name="" id="" style="width: 200px;">
+											</td>
+										</tr>
+										<tr>
+											<th><label for="" class="essen" title="필수">전화번호</label></th>
+											<td><input type="text" name="" id="" style="width: 90%;"></td>
+											<th><label for="">팩스번호</label></th>
+											<td><input type="text" name="" id="" style="width: 90%;"></td>
+										</tr>
+									</tbody>
+								</table>
+								<p class="note">(예 : 011-1234-5678, 해외는 국가 번호를 기입하시오.)</p>
+							</dd>
+
+							<dt class="boldTit">• 근무처(영문)</dt>
+							<dd>
+								<table class="tblDef">
+									<colgroup>
+										<col style="width: 20%;">
+										<col style="width: 80%;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th><label for="" class="essen" title="필수">Affiliation</label></th>
+											<td><input type="text" name="" id="" style="width: 90%;"></td>
+										</tr>
+										<tr>
+											<th><label for="">Department</label></th>
+											<td><input type="text" name="" id="" style="width: 90%;"></td>
+										</tr>
+										<tr>
+											<th><label for="">Position</label></th>
+											<td><input type="text" name="" id="" style="width: 90%;"></td>
+										</tr>
+									</tbody>
+								</table>
+							</dd>
+
+							<dt class="boldTit">• 자택</dt>
+							<dd>
+								<table class="tblDef inputTbl">
+									<colgroup>
+										<col style="width: 20%;">
+										<col style="width: 80%;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th><label for="" class="essen" title="필수">주소</label></th>
+											<td class="address">
+												<input type="text" name="" id="">
+												<span class="btn"><a href="#" class="btnGrey btnSmall">우편번호</a></span>
+												<input type="radio" name="" id=""><label for="">국내거주</label>
+												<input type="radio" name="" id=""><label for="">해외거주</label>
+												<input type="text" name="" id="" class="clear" style="width: 190px;">
+												<input type="text" name="" id="" style="width: 200px;">
+											</td>
+										</tr>
+										<tr>
+											<th><label for="">전화번호</label></th>
+											<td>
+												<input type="text" name="" id="" style="width: 70%;">
+												<span class="note">(예 : 011-1234-5678, 해외는 국가 번호를 기입하시오.) </span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</dd>
+						</dl>
+
+
+						<h2>관심분야 및 경력사항</h2>
+						<table class="tblDef inputTbl">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>관심분야<br/>(3개 이하 선택)</th>
+									<td class="multi">
+										<span class="note">* 부문별 위원회에 참가하고자 하는 분야나 논문심사를 할 수 있는 분야</span>
+										<select name="" id="">
+											<option value="">관심1</option>
+										</select>
+										<select name="" id="">
+											<option value="">관심2</option>
+										</select>
+										<select name="" id="">
+											<option value="">관심3</option>
+										</select>
+										<label for="" class="clear tm5">* 해당 분야가 없을 경우 직접 기재</label>
+										<input type="text" name="" id="" style="width: 200px;margin-top: 5px;">
+									</td>
+								</tr>
+								<tr>
+									<th><label for="">경력사항</label></th>
+									<td><textarea name="" id="" cols="30" rows="10">경력사항 경력사항</textarea></td>
+								</tr>
+							</tbody>
+						</table>
+
+
+						<h2>기타정보</h2>
+						<table class="tblDef inputTbl">
+							<colgroup>
+								<col style="width: 30%;">
+								<col style="width: 70%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><label for="" title="필수" class="essen">우편물 수령 희망처</label></th>
+									<td class="multi">
+										<input type="radio" name="" id=""><label for="">근무처</label>
+										<input type="radio" name="" id=""><label for="">자택</label>
+										<label for="">발송중단여부</label>
+										<select name="" id="">
+											<option value="">Y</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th><span title="필수" class="essen">해외근무(거주)자<br />우편물 수령방법</span></th>
+									<td style="padding: 0;">
+										<table class="innerTbl">
+											<colgroup>
+												<col style="width: 40%;">
+												<col style="width: 30%;">
+												<col style="width: 30%;">
+											</colgroup>
+											<thead>
+												<tr>
+													<th></th>
+													<th>추가비용</th>
+													<th>배송소요시간</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th><input type="radio" name="" id=""><label for="">항공우편</label></th>
+													<td>30,000원 추가</td>
+													<td>2주 이내</td>
+												</tr>
+												<tr>
+													<th><input type="radio" name="" id=""><label for="">선박우편</label></th>
+													<td>추가비용 없음</td>
+													<td>2개월 이내</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<th><label for="">소식지회</label></th>
+									<td>
+										<select name="" id="">
+											<option value="">본회</option>
+											<option value="">대구/경북지회</option>
+											<option value="">광주/호남지회</option>
+											<option value="">부산/울산/경남지회</option>
+											<option value="">대전/청청지회</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>논문집 구독여부</th>
+									<td class="multi">
+										<input type="radio" name="" id=""><label for="">구독</label>
+										<input type="radio" name="" id=""><label for="">비구독</label>
+									</td>
+								</tr>
+								<tr>
+									<th>학회지(오토저널)<br />우편 수령 희망</th>
+									<td class="multi">
+										<input type="radio" name="" id=""><label for="">예</label>
+										<input type="radio" name="" id=""><label for="">아니오</label>
+									</td>
+								</tr>
+								<tr>
+									<th><span class="essen" title="필수">개인정보 공개여부</span></th>
+									<td class="multi">
+										<input type="radio" name="" id=""><label for="">공개 (직위 / 전화번호 / E-mail)</label>
+										<input type="radio" name="" id=""><label for="">비공개</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+
+					
+
+						<h2>관리자 입력정보</h2>
+						<p class="note">※ 관리자입력정보를 수정/등록 입력 후 해당 메모등록 버튼을 클릭하시면 저장 됩니다.</p>
+						<table class="tblDef">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 80%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label for="">학회활동</label>
+										<span class="btn"><input type="button" value="메모등록" class="btnPoint btnSmall"></span>
+									</th>
+									<td><textarea name="" id="" cols="30" rows="10">학회활동 학회활동</textarea></td>
+								</tr>
+								<tr>
+									<th>
+										<label for="">관리자메모</label>
+										<span class="btn"><input type="button" value="메모등록" class="btnPoint btnSmall"></span>
+									</th>
+									<td><textarea name="" id="" cols="30" rows="10">관리자메모 관리자메모</textarea></td>
+								</tr>
+							</tbody>
+						</table>
+
+
+						<div class="btn btnArea">
+							<input type="submit" value="수정" class="btnDef">
+						</div>
+					</fieldset>
+				</form>
+			</div>
+
+		</div>
+		<!-- //scrollArea -->
+	</div>
+	<p class="close"><a href="#" title="팝업창 닫기">X</a></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AutoRefresher Demo</title>
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap 4 (not required) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/flatly/bootstrap.min.css">
+
+    <!-- FontAwesome (not required) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- AutoRefresher (required)-->
+    <link rel="stylesheet" href="dist/css/autorefresher.min.css">
+    <style>
+        body { overflow: hidden; height: 100vh; background: #fafafa; }
+        h1 { margin-bottom: 50px; font-family: 'Quicksand'; }
+        .container { margin: 150px auto; }
+    </style>
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+
+<body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="https://www.jqueryscript.net/time-clock/countdown-progress-bar-auto-refresher.html">Download This Plugin</a></li>
+<li><a href="https://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul><div id="carbon-block"></div>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+    <div class="container">
+        <h1 class="text-center">Auto Refresher</h1>
+                <div class="auto-refresher mt-auto mb-auto"></div>
+        </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="dist/js/autorefresher.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.auto-refresher').autoRefresher({
+                //  This is the amount of time, in seconds, before the refresh takes place.
+                //  Value must be a positive integer.
+                seconds: 5,
+                //  You can provide any function to callback to once the amount of time to wait
+                //  has been reached if you'd rather it do something other than refresh the page.
+                //  If nothing is provided however, the page is just refreshed.
+                callback: function () {
+                    alert('done')
+                },
+                //  The height of the progress bar. Values must be a positive number + css unit
+                //  of measurement (e.g. %, px, em, rem). Default is 7px
+                progressBarHeight: '7px',
+                //  If showControls is true, then the stop and start buttons are added
+                showControls: true,
+                //  You can apply css classes to the stop button, such as bootstrap
+                //  classes or your own custom ones.  If no value is given, a default
+                //  style is applied (refer to auto-refresher-button in autorefresher.css)
+                stopButtonClass: 'btn btn-sm btn-outline-secondary m-1',
+                //  You can set the inner section of the stop button using this
+                //  This only applies if showControls is true
+                stopButtonInner: '<i class="fas fa-stop"></i>',
+                //  You can apply css classes to the start button, such as bootstrap
+                //  classes or your own custom ones.  If no value is given, a default
+                //  style is applied (refer to auto-refresher-button in autorefresher.css)
+                startButtonClass: 'btn btn-sm btn-outline-secondary m-1',
+                //  You can set the inner section of the start button using this
+                //  This only applies if showControls is true
+                startButtonInner: '<i class="fas fa-play"></i>',
+            });
+        })
+    </script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+
+</html>

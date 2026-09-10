@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 7]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie7"><![endif]-->
+<!--[if IE 8]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie8"><![endif]-->
+<!--[if IE 9]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="kor" xml:lang="kor"><!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>관리자 | 한국자동차공학회</title>	
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link type="text/css" rel="stylesheet" href="/css/common_v3.css" />
+<link type="text/css" rel="stylesheet" href="http://jajaknew.ksae.org/css/ksae_jajak_sub.css" />
+<link type="text/css" rel="stylesheet" href="/admin/css/admin_v2.css" />
+<!--[if lt IE 8]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js">IE7_PNG_SUFFIX=".png";</script>
+<![endif]-->
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+<script type="text/javascript" src="/admin/script/user_admin.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+jQuery(function($) {
+
+});
+//]]>
+</script>
+</head>
+
+<body>
+
+<div class="popupWrap_admin" id="popupApplyForm">
+	<h1>온라인 참가 신청 등록</h1>
+	<div class="popupCon">
+
+		<div class="formArea">
+			<form id="" name="" action="" method="post">
+				<fieldset>
+					<legend>자작 온라인 참가 신청</legend>
+
+					<h2 class="tm0">신청자 정보 <span class="btn"><a href="#" class="btnGrey btnSmall">회원확인</a></span></h2>
+					<table class="tblDef inputTbl">
+						<colgroup>
+							<col style="width: 20%;">
+							<col style="width: 30%;">
+							<col style="width: 20%;">
+							<col style="width: 30%;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th><label for="">아이디</label></th>
+								<td><input type="text" name="" id="" style="width: 85%;"></td>
+								<th><label for="">성명</label></th>
+								<td><input type="text" name="" id="" style="width: 85%;"></td>
+							</tr>
+							<tr>
+								<th><label for="">이메일</label></th>
+								<td><input type="text" name="" id="" style="width: 85%;"></td>
+								<th><label for="">휴대폰</label></th>
+								<td><input type="text" name="" id="" style="width: 85%;"></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h2>기본정보</h2>
+					<table class="tblDef inputTbl">
+						<colgroup>
+							<col style="width: 15%;">
+							<col style="width: 35%;">
+							<col style="width: 15%;">
+							<col style="width: 35%;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>참가부문</th>
+								<td colspan="3" class="multi">
+									<input type="checkbox" name="" id=""><label for="">Baja</label>
+									<input type="checkbox" name="" id=""><label for="">Formula</label>
+									<input type="checkbox" name="" id=""><label for="">EV</label>
+									<input type="checkbox" name="" id=""><label for="">기술아이디어</label>
+									<input type="checkbox" name="" id=""><label for="">디자인	</label>
+									<span class="clear note">* 기술아이디어/디자인은 타 부문과 중복 선택 가능</span>
+								</td>
+							</tr>
+							<tr>
+								<th><label for="">학교명</label></th>
+								<td>
+									<select name="" id="">
+										<option value="">선택</option>
+									</select>
+								</td>
+								<th>대학교 구분</th>
+								<td class="multi">
+									<input type="radio" name="" id=""><label for="">본교</label>
+									<input type="radio" name="" id=""><label for="">캠퍼스</label>
+									<input type="radio" name="" id=""><label for="">연합팀(타 대학간)</label>
+								</td>
+							</tr>
+							<tr>
+								<th><label for="">팀명</label></th>
+								<td class="multi">
+									<input type="text" name="" id="">
+									<span class="btn"><a href="#" class="btnGrey btnSmall">중복체크</a></span>
+								</td>
+								<th><label for="">차랑명</label></th>
+								<td><input type="text" name="" id=""></td>
+							</tr>
+							<tr>
+								<th><label for="">아이디</label></th>
+								<td colspan="3" class="multi">
+									<input type="text" name="" id="">
+									<span class="btn"><a href="#" class="btnGrey btnSmall">중복체크</a></span>
+									<span class="note lm20">* 4~20자 영문</span>
+								</td>
+							</tr>
+							<tr>
+								<th><label for="">패스워드</label></th>
+								<td><input type="password" name="" id=""></td>
+								<th><label for="">패스워드확인</label></th>
+								<td><input type="password" name="" id=""></td>
+							</tr>
+						</tbody>
+					</table>
+
+
+					<h2>팀원 정보</h2>
+					<table class="tblDef inputTbl ac">
+						<colgroup>
+							<col style="width: 10%;">
+							<col style="width: 15%;">
+							<col style="width: 15%;">
+							<col style="width: 15%;">
+							<col style="width: *;">
+							<col style="width: 6%;">
+							<col style="width: 6%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>항목</th>
+								<th>성명</th>
+								<th>학과</th>
+								<th>핸드폰</th>
+								<th>이메일</th>
+								<th>검색</th>
+								<th>추가</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									지도교수
+								</td>
+								<td><input type="text" name="" id=""></td>
+								<td><input type="text" name="" id=""></td>
+								<td><input type="text" name="" id=""></td>
+								<td><input type="text" name="" id=""></td>
+								<td class="btn"><a href="#" class="btnGrey" title="회원정보검색"><i class="fab fa-sistrix" style="padding-top: 3px;"></i></a></td>
+								<td class="btn"></td>
+							</tr>
+							<tr>
+								<td>
+									<select name="" id="">
+										<option value="">팀장</option>
+									</select>
+								</td>
+								<td><input type="text" name="" id=""></td>
+								<td><input type="text" name="" id=""></td>
+								<td><input type="text" name="" id=""></td>
+								<td><input type="text" name="" id=""></td>
+								<td class="btn"><a href="#" class="btnGrey" title="회원정보검색"><i class="fab fa-sistrix" style="padding-top: 3px;"></i></a></td>
+								<td class="btn"></td>
+							</tr>
+							<tr>
+								<td colspan="7" class="padding0">
+									<table class="innerTbl">
+										<colgroup>
+											<col style="width: 25%;">
+											<col style="width: 75%;">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th><label for="">운전면허증 업로드</label></th>
+												<td>
+													<!-- li_드라이버이름.jpg 로 파일명 자동생성 -->
+													<div class="selectFile lp10">
+														<p><input name="" id="fileName" value="Select File" type="text"></p>
+														<p class="btnSearch"><i class="fab fa-sistrix"></i><input class="opacity0" name="" id="figure_file" onchange="document.getElementById('fileName').value=this.value;" type="file"></p>
+													</div> <!-- //selectFile -->
+												</td>
+											</tr>
+											<tr>
+												<th><label for="">드라이버(증명사진) 업로드</label></th>
+												<td>
+													<!-- p_드라이버이름.jpg 로 파일명 자동생성 -->
+													<div class="selectFile lp10">
+														<p><input name="" id="fileName" value="Select File" type="text"></p>
+														<p class="btnSearch"><i class="fab fa-sistrix"></i><input class="opacity0" name="" id="figure_file" onchange="document.getElementById('fileName').value=this.value;" type="file"></p>
+													</div> <!-- //selectFile -->
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<select name="" id="">
+										<option value="">팀원</option>
+									</select>
+								</td>
+								<td><input type="text" name="" id=""></td>
+								<td><input type="text" name="" id=""></td>
+								<td><input type="text" name="" id=""></td>
+								<td><input type="text" name="" id=""></td>
+								<td class="btn"><a href="#" class="btnGrey" title="회원정보검색"><i class="fab fa-sistrix" style="padding-top: 3px;"></i></a></td>
+								<td class="btn"></td>
+							</tr>
+							<tr>
+								<td>
+									<select name="" id="">
+										<option value="">팀원</option>
+									</select>
+								</td>
+								<td><input type="text" name="" id=""></td>
+								<td><input type="text" name="" id=""></td>
+								<td><input type="text" name="" id=""></td>
+								<td><input type="text" name="" id=""></td>
+								<td class="btn"><a href="#" class="btnGrey" title="회원정보검색"><i class="fab fa-sistrix" style="padding-top: 3px;"></i></a></td>
+								<td class="btn"><a href="#" class="btnBdDef" title="팀원 삭제"><i class="fas fa-user-minus" style="padding-top: 3px;"></i></a></td>
+							</tr>
+							<tr>
+								<td>
+									<select name="" id="">
+										<option value="">팀원</option>
+									</select>
+								</td>
+								<td><input type="text" name="" id=""></td>
+								<td><input type="text" name="" id=""></td>
+								<td><input type="text" name="" id=""></td>
+								<td><input type="text" name="" id=""></td>
+								<td class="btn"><a href="#" class="btnGrey" title="회원정보검색"><i class="fab fa-sistrix" style="padding-top: 3px;"></i></a></td>
+								<td class="btn"><a href="#" class="btnDef" title="팀원 추가"><i class="fas fa-user-plus" style="padding-top: 3px;"></i></a></td>
+							</tr>
+						</tbody>
+					</table>
+
+
+
+					<h2>서류제출</h2>
+					<dl class="borderArea">
+						<dt class="boldTit">• 참가팀 소개 양식 파일 업로드 (hwp) </dt>
+						<dd>
+							<!-- intro_학교명.hwp 로 파일명 자동생성 -->
+							<div class="selectFile">
+								<p><input name="" id="fileName" value="Select File" type="text"></p>
+								<p class="btnSearch"><i class="fab fa-sistrix"></i><input class="opacity0" name="" id="figure_file" onchange="document.getElementById('fileName').value=this.value;" type="file"></p>
+							</div> <!-- //selectFile -->
+						</dd>
+
+						<dt class="boldTit">• 지도교수 서약서 (pdf)</dt>
+						<dd>
+							<!-- pf_학교명.pdf 로 파일명 자동생성 -->
+							<div class="selectFile">
+								<p><input name="" id="fileName" value="Select File" type="text"></p>
+								<p class="btnSearch"><i class="fab fa-sistrix"></i><input class="opacity0" name="" id="figure_file" onchange="document.getElementById('fileName').value=this.value;" type="file"></p>
+							</div> <!-- //selectFile -->
+							<p class="fcRed">* 지도교수 자필 서명하여 스캔하여 제출</p>
+						</dd>
+
+						<dt class="boldTit">• 설계보고서 (hwp)</dt>
+						<dd>
+							<!-- report1_학교명.hwp 로 파일명 자동생성 -->
+							<div class="selectFile">
+								<p><input name="" id="fileName" value="Select File" type="text"></p>
+								<p class="btnSearch"><i class="fab fa-sistrix"></i><input class="opacity0" name="" id="figure_file" onchange="document.getElementById('fileName').value=this.value;" type="file"></p>
+							</div> <!-- //selectFile -->
+						</dd>
+
+						<dt class="boldTit">• 비용보고서 (xls)</dt>
+						<dd>
+							<!-- report2_학교명.hwp 로 파일명 자동생성 -->
+							<div class="selectFile">
+								<p><input name="" id="fileName" value="Select File" type="text"></p>
+								<p class="btnSearch"><i class="fab fa-sistrix"></i><input class="opacity0" name="" id="figure_file" onchange="document.getElementById('fileName').value=this.value;" type="file"></p>
+							</div> <!-- //selectFile -->
+						</dd>
+					
+					</dl>
+
+
+
+
+
+					<h2>추가정보</h2>
+					<dl>
+						<dt class="boldTit">• 대회 관련 물품 (포스터, 기념품, 상장 등) 배송지</dt>
+						<dd class="address">
+							<input type="text" name="" id=""><span class="btn"><a href="#" class="btnGrey">우편번호검색</a></span>
+							<input type="text" name="" id="" class="clear">
+							<input type="text" name="" id="">
+						</dd>
+
+						<dt class="boldTit tm20">• 계좌정보</dt>
+						<dd class="bank">
+							<table class="tblDef inputTbl">
+								<colgroup>
+									<col style="width: 15%;">
+									<col style="width: 35%;">
+									<col style="width: 15%;">
+									<col style="width: 35%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th><label for="">은행명</label></th>
+										<td><input type="text" name="" id=""></td>
+										<th><label for="">예금주</label></th>
+										<td><input type="text" name="" id=""></td>
+									</tr>
+									<tr>
+										<th><label for="">계좌번호</label></th>
+										<td><input type="text" name="" id=""></td>
+										<th><label for="">통장사본 (jpg)</label></th>
+										<td>
+											<!--bank_학교명.jpg 로 파일명 자동생성 -->
+											<div class="selectFile">
+												<p><input name="" id="fileName" value="Select File" type="text" style="width:180px;"></p>
+												<p class="btnSearch"><i class="fab fa-sistrix"></i><input class="opacity0" name="" id="figure_file" onchange="document.getElementById('fileName').value=this.value;" type="file"></p>
+											</div> <!-- //selectFile -->
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</dd>
+					</dl>
+
+
+					<div class="btn btnArea">
+						<input type="submit" value="저장" class="btnDef">
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<p class="close"><a href="#" title="팝업창 닫기">X</a></p>
+</div>
+
+</body>
+</html>

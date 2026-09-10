@@ -1,0 +1,56 @@
+#COMMENT_LIST_GROUP *{font-size:15px;}
+#COMMENT_LIST_GROUP{padding:0px 10px  5px 10px;  margin:7px auto 0; background-color: #e4e4e4; border-top:2px solid #000;}
+#COMMENT_LIST_GROUP div{padding:0px;}
+
+#COMMENT_LIST_GROUP .cminput {margin:10px 0; padding:0; width:100%; border-collapse:collapse;table-layout:fixed;}
+#COMMENT_LIST_GROUP .cminput.add{margin-top:10px;}
+#COMMENT_LIST_GROUP .cminput .box {font-family:돋움; font-size:12px; border:1px #C4CAD1 solid; background:#FFFFFF;}
+#COMMENT_LIST_GROUP .cminput .ubox {font-family:돋움; font-size:12px; border:1px #C4CAD1 solid; background:#FFFFFF;}
+#COMMENT_LIST_GROUP .cminput .i1 {width:29px; white-space:nowrap; vertical-align:top;}
+#COMMENT_LIST_GROUP .cminput .i2 {*padding-right:2px;width:100%;}
+#COMMENT_LIST_GROUP .cminput .i2 .activitystop {padding-top:2px;text-decoration:none}
+#COMMENT_LIST_GROUP .cminput .i3 {position:relative;width:89px;text-align:right;vertical-align:bottom}
+#COMMENT_LIST_GROUP .cminput .i3 img {vertical-align:top;}
+#COMMENT_LIST_GROUP .cminput .i3 input{margin-right:3px}
+#COMMENT_LIST_GROUP .cminput .i3 p{margin:0 0 3px 5px;text-align:left}
+#COMMENT_LIST_GROUP .cminput .i3 p input{width:15px;height:15px;*width:13px;*height:13px;margin:-1px 0 1px;padding:0;vertical-align:middle}
+#COMMENT_LIST_GROUP .cminput .i3 p label{display:inline-block;font-family:'돋움',dotum,Helvetica,sans-serif;font-size:11px;vertical-align:middle}
+#COMMENT_LIST_GROUP .cminput .i3 .btn_edit{float:none;position:absolute;top:0;right:0;text-align:right}
+#COMMENT_LIST_GROUP .cminput .i3 .btn_area{position:relative;*padding-bottom:1px}
+#COMMENT_LIST_GROUP .cminput .textarea {width:99%; margin:0 auto; padding:1px 0; overflow:auto;-webkit-appearance:none;-webkit-border-radius:0; resize:none; padding:5px;height: 50px !important;}
+#COMMENT_LIST_GROUP .cminput .comm_write_wrap{clear:both;padding:10px;border-width:1px;border-style:solid}
+#COMMENT_LIST_GROUP .cminput .comm_write_wrap .textarea{border:0 !important;}
+#COMMENT_LIST_GROUP .cminput .comm_write_wrap .textarea::placeholder{color:#9c9c9c; line-height: 17px; font-size:12px;}
+#COMMENT_LIST_GROUP .skin-bgcolor {background-color: #ffffff; background-image: none; background-repeat: repeat; border-color: #e5e5e5;}
+
+#COMMENT_LIST_GROUP .u_cbox_btn_upload{display:inline-block;position:absolute;bottom:0;right:0;z-index:10;width:80px;height:70px;border:1px solid #ccc;background:#fff !important;font-size:13px;font-weight:bold;line-height:70px;text-align:center}
+#COMMENT_LIST_GROUP .u_cbox_btn_upload a{display:inline-block;width:100%;height:100%;color:#666; text-decoration: none;}
+#COMMENT_LIST_GROUP .u_cbox_btn_upload a:hover{background:#3f51b5;color:#fff;}
+#COMMENT_LIST_GROUP .u_cbox_btn_upload.on a{color:#00c73c;}
+
+
+#COMMENT_LIST_GROUP ul li:nth-child(even) {background-color: #fff;list-style: none;}
+#COMMENT_LIST_GROUP .total{margin:10px 0 0px 0px; font-size: 13px; padding-left:10px;color: #1126bb;}
+#COMMENT_LIST_GROUP .comm_cont{margin:0 0 15px 0; padding:10px;     background: #fff;}
+
+#COMMENT_LIST_GROUP .comm_cont *{font-size: 13px;}
+#COMMENT_LIST_GROUP .comm_cont > p{margin:0; padding-bottom:10px;}
+#COMMENT_LIST_GROUP .comm_cont > p .sgindate{font-size:11px; color:#a8a8a8;}
+#COMMENT_LIST_GROUP .comm_cont > p .btn_recomment{font-size:11px; color:#666; display:inline-block; margin-left:20px; padding:2px 5px 1px; background-color:#fff; border:1px solid #666; font-weight: bold; cursor:pointer;}
+#COMMENT_LIST_GROUP .comm_cont > p .btn_modify{font-size:11px; color:#0014ff; display:inline-block; margin-left:2px; padding:2px 5px 1px; background-color:#fff; border:1px solid #0014ff; font-weight: bold; cursor:pointer;}
+#COMMENT_LIST_GROUP .comm_cont > p .btn_delete{font-size:11px; color:#de0000; display:inline-block; margin-left:2px; padding:2px 5px 1px; background-color:#fff; border:1px solid #de0000; font-weight: bold; cursor:pointer;}
+#COMMENT_LIST_GROUP .comm_cont > p .btn_recancel,
+#COMMENT_LIST_GROUP .comm_cont > p .btn_mocancel{font-size:11px; color:#00de07; display:inline-block; margin-left:20px; padding:2px 5px 1px; background-color:#fff; border:1px solid #00de07; font-weight: bold; cursor:pointer;}
+#COMMENT_LIST_GROUP .comm_cont > p .btn_mocancel.leftNone{margin-left:2px;}
+#COMMENT_LIST_GROUP .comm_cont  span.rname{color:#E91E63;}
+#COMMENT_LIST_GROUP .comm_cont img{max-height:700px;}
+
+#COMMENT_LIST_GROUP li.CC{list-style: none;padding-left:40px; background-image:url('/api_comment/image/comment.png'); background-repeat: no-repeat;
+    background-position: 5px 4px; background-size:25px;}
+
+
+
+	 
+#COMMENT_LIST_GROUP div {scrollbar-3dLight-Color: #dcdcdc; scrollbar-arrow-color: #dcdcdc; scrollbar-base-color: #272b4b; scrollbar-Face-Color: #272b4b; scrollbar-Track-Color: #dcdcdc; scrollbar-DarkShadow-Color: #dcdcdc; scrollbar-Highlight-Color: #dcdcdc; scrollbar-Shadow-Color: #dcdcdc}
+#COMMENT_LIST_GROUP div::-webkit-scrollbar {width: 8px;background-color: #dcdcdc;}
+#COMMENT_LIST_GROUP div::-webkit-scrollbar-thumb {background-color: #272b4b;}

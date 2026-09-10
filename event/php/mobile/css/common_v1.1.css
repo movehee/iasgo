@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+/* Nanum Gothic (Korean) http://www.google.com/fonts/earlyaccess */
+/* 나눔고딕 폰트 사용시 주석 해제 */
+/*
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src:url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
+	src:url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),
+		url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
+		url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype');
+}
+*/
+
+
+/* Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin:0; padding:0; border:0 none;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+html, body {width:100%;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;}
+ol, ul, li {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content:''; content: none;}
+table {border-spacing:0;}
+caption, legend {width:0; height:0; visibility:hidden; line-height:0;}
+hr {display:none;}
+em, address {font-style:normal}
+pre {white-space:pre-wrap;		/* CSS3*/
+	white-space:-moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space:-pre-wrap;		/* Opera 4-6 */
+	white-space:-o-pre-wrap;	/* Opera 7 */
+	word-wrap:break-all;		/* Internet Explorer 5.5+ */ }
+img {border:0 none; font-size:0; line-height:0; vertical-align:top;}
+.ie7 li, .ie7 li a {zoom:1;}
+
+/* 여백 */
+.padding0 {padding:0 !important;}
+.margin0 {margin:0 !important;}
+/* Top Padding */
+.tp0 {padding-top:0px !important;}
+.tp5 {padding-top:5px !important;}
+.tp10 {padding-top:10px !important;}
+.tp15 {padding-top:15px !important;}
+.tp20 {padding-top:20px !important;}
+.tp25 {padding-top:25px !important;}
+.tp30 {padding-top:30px !important;}
+/* Bottom Padding */
+.bp0 {padding-bottom:0px !important;}
+.bp5 {padding-bottom:5px !important;}
+.bp10 {padding-bottom:10px !important;}
+.bp15 {padding-bottom:15px !important;}
+.bp20 {padding-bottom:20px !important;}
+.bp25 {padding-bottom:25px !important;}
+.bp30 {padding-bottom:30px !important;}
+/* Left Padding */
+.lp0 {padding-left:0 !important;}
+.lp5 {padding-left:5px !important;}
+.lp10 {padding-left:10px !important;}
+.lp15 {padding-left:15px !important;}
+.lp20 {padding-left:20px !important;}
+.lp25 {padding-left:25px !important;}
+.lp30 {padding-left:30px !important;}
+/* Right Padding */
+.rp0 {padding-right:0 !important;}
+.rp5 {padding-right:5px !important;}
+.rp10 {padding-right:10px !important;}
+.rp15 {padding-right:15px !important;}
+.rp20 {padding-right:20px !important;}
+.rp25 {padding-right:25px !important;}
+.rp30 {padding-right:30px !important;}
+/* Top Margin */
+.tm0 {margin-top:0 !important;}
+.tm5 {margin-top:5px !important;}
+.tm10 {margin-top:10px !important;}
+.tm15 {margin-top:15px !important;}
+.tm20 {margin-top:20px !important;}
+.tm25 {margin-top:25px !important;}
+.tm30 {margin-top:30px !important;}
+/* Bottom Margin */
+.bm0 {margin-bottom:0 !important;}
+.bm5 {margin-bottom:5px !important;}
+.bm10 {margin-bottom:10px !important;}
+.bm15 {margin-bottom:15px !important;}
+.bm20 {margin-bottom:20px !important;}
+.bm25 {margin-bottom:25px !important;}
+.bm30 {margin-bottom:30px !important;}
+/* Left Margin */
+.lm0 {margin-left:0 !important;}
+.lm5 {margin-left:5px !important;}
+.lm10 {margin-left:10px !important;}
+.lm15 {margin-left:15px !important;}
+.lm20 {margin-left:20px !important;}
+.lm25 {margin-left:25px !important;}
+.lm30 {margin-left:30px !important;}
+/* Right Margin */
+.rm0 {margin-right:0 !important;}
+.rm5 {margin-right:5px !important;}
+.rm10 {margin-right:10px !important;}
+.rm15 {margin-right:15px !important;}
+.rm20 {margin-right:20px !important;}
+.rm25 {margin-right:25px !important;}
+.rm30 {margin-right:30px !important;}
+
+/* float */
+.fl {float:left !important;}
+.fr {float:right !important;}
+.Lfloat {float:left !important;}
+.Rfloat {float:right !important;}
+.overHidden {overflow:hidden;}
+.clear {clear:both !important;}
+.clearleft {clear:left !important;}
+.clfix:after {content:""; display:block; clear:both; visibility:hidden; height:0; font-size:0;}
+.ie7 .clfix {zoom:1;}
+
+/* align */
+.al {text-align:left !important;}
+.ac {text-align:center !important;}
+.ar {text-align:right !important;}
+
+/* position */
+.posRel {position:relative !important;}
+.posAbs {position:absolute !important;}
+.posTL {position:absolute !important; top:0; left:0;}
+.posTR {position:absolute !important; top:0; right:0;}
+.posBL {position:absolute !important; bottom:0; left:0;}
+.posBR {position:absolute !important; bottom:0; right:0;}
+
+/* display */
+.none {display:none !important;}
+.iBlock {display:inline-block !important; vertical-align:top;}
+.ie7 .iBlock {display:inline !important;}
+.borderNone {border:none !important;}
+.scrollArea {overflow-x:hidden;overflow-y:scroll;}
+/* IR 기법 */
+.hidden {position:absolute; top:-11000px; left:-11000px; width:0; height:0; overflow:hidden;}
+.ie7 .hidden {position:static; font-size:0; line-height:0;}
+/* 한 줄일 때, 말줄임표 */
+.ellipsis {position:relative; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;} /* width 별도 설정 */
+/*투명도*/
+.opacity0 {opacity:0; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0);}
+/* 세로 가운데 정렬을 위한 빈태그용 */
+.blank {display:inline-block; width:0; vertical-align:middle; overflow:hidden; vertical-align:middle;} /* 높이 별도 설정 */
+
+/* table */
+table {width:100%; border:0; border-collapse:separate; border-spacing:0;}
+.ie7 table {border-collapse:collapse;}
+table tr.none, table tr.none th, table tr.none td {display:none;}
+table th {font-weight:normal;}
+/* 2016.09.06 : 영문입력시 무조건 줄바꿈이 되기 때문에 word-break:break-all; 속성 지움 */
+table td {word-break:normal;}
+
+
+/* 필수입력 */
+.essen {display:inline-block;padding-left:10px;background:url(/image/common/bl_essen.png) 0 6px no-repeat;}
+
+/* Font */
+.fwBold {font-weight:bold !important;}
+.fwNormal {font-weight:normal !important;}
+.fcWhite {color:#fff !important;}
+.fcBlack {color:#000 !important;}
+.fcRed {color: #ed1c24 !important;}
+.ffNG {font-family:Calibri,'Nanum Gothic', NanumGothic, '돋움', Dotum, 'Apple Gothic', sans-serif !important;}
+.ffDotum {font-family:Calibri,'돋움', Dotum, 'Apple Gothic', sans-serif !important;}
+.ffGulim {font-family:Calibri,'굴림', '굴림체', Gulim, 'Apple Gothic', sans-serif !important;}
+.underline {text-decoration:underline !important;}
+.italic {font-style:italic;}
+
+/* cursor */
+.cursorDef {cursor:default !important;}
+.hand {cursor:pointer !important;}
+a, label, button,
+input[type='radio'],
+input[type='checkbox'],
+input[type='image'],
+input[type='button'],
+input[type='submit'],
+input[type='reset'] {cursor:pointer !important;}
+
+/* Form Elememts */
+input[type='text'],
+input[type='password'],
+input[type='file'],
+select,
+textarea,
+button {display:inline-block;}
+input[type='text'],
+input[type='password'],
+input[type='file'],
+select,
+textarea {border:1px solid #ccc;}
+textarea {padding:7px 10px; border:1px solid #cfcfcf; resize:vertical;}
+label,
+.label {display:inline-block; vertical-align:middle;}
+.ie7 select {zoom:1;}
+input[type='radio'] {display:inline-block; margin-top:0; margin-right:3px;}
+input[type='checkbox'] {display:inline-block; margin-top:2px; margin-right:3px;}
+
+/* button 초기화 */
+button.style-btn {overflow:visible; padding:0; border:0; cursor:pointer; white-space:nowrap;}
+button.style-btn::-moz-focus-inner,
+input[type='button']::-moz-focus-inner,
+input[type='submit']::-moz-focus-inner,
+input[type='reset']::-moz-focus-inner {padding:0; border:0;}	/* FF 버튼 여백 없애기 */
+
+/* default font-family */
+body,
+input[type='text'],
+input[type='password'],
+input[type='file'],
+select,
+textarea,
+button {font-family:Calibri,Tahoma, '돋움', Dotum, 'Apple Gothic', sans-serif;}
+
+
+/* 공통 레이아웃 */
+body {font-size:12px; line-height:1.5; color:#333; -webkit-text-size-adjust:none;}
+/* 2016.09.06 : 영문입력시 무조건 줄바꿈이 되기 때문에 word-break:break-all; 속성 지움 */
+.wrapper {position:relative; width:100%; min-width:1000px;word-break:normal;z-index:0;}
+
+/* skip Navigation */
+#skipNavi dl {position:absolute;}
+#skipNavi dt {position:absolute; top:-10000px;}
+#skipNavi dd a {position:absolute; display:block; width:200px; left:50%; text-align:center; top:-10000px; z-index:999; font-size:16px;}
+#skipNavi dd a:hover,
+#skipNavi dd a:focus,
+#skipNavi dd a:active {position:absolute; top:5px; padding:15px 0; margin-left:-500px; font-weight:bold; color:#fff; text-decoration:underline; background:#336ea2;}
+
+/* no style table */
+.tblNoStyle {}
+.tblNoStyle td {height:auto; padding:0; border:0 none;}
+
+/* BBS List table */
+.tblList {}
+
+/* BBS detail table */
+.tblDetail {}
+
+
+/* BBS tblPost */
+.tblPost {}
+
+
+

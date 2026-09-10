@@ -1,0 +1,95 @@
+@charset "utf-8";
+@import url('/asset/fontawesome.css');
+@import url('/asset/NotoSansKR.css');
+
+body {margin: 0;padding: 0;background-color: #f4f5f7;}
+
+form, fieldset, legend {margin: 0;padding: 0;border: 0 none;}
+legend {visibility: hidden;font-size: 0;line-height: 0;}
+
+/* 버튼 */
+.btn a,
+.btn input,
+.btn button {display:inline-block;text-decoration:none;cursor:pointer;height:80px;padding:0 40px;font-size:30px;line-height: 78px;border-width:1px;border-style: solid;vertical-align:top;font-family: 'NotoSansKR Bold', sans-serif;}
+
+.sms{border-radius: 50px;border: 2px solid #0b3a8d; margin-top: 27px;font-size: 59px; color: #FFF;background: #00459d;}
+
+/* 파란색*/			.btnDef {background-color: #374781 !important;border-color: #374781 !important;color: #fff !important;}
+
+.btnArea {padding: 40px 0;text-align: center;}
+
+div.selfprint {}
+div.selfprint h1 {margin: 0;padding: 0;border-bottom: 7px solid #2f6ce5;background: url('bg.png') right top no-repeat #fff;}
+/* div.selfprint h1 {margin: 0;padding: 0;border-bottom: 7px solid #243b95;background: url('topVisualBg_r.png') right top no-repeat, url('topVisualBg_l.png') left top no-repeat, #fff;} */
+div.selfprint h1 img {display: block;margin: 0 auto;}
+
+div.contents {position: relative;min-height: 560px;}
+
+.fcPoint {color: #0065e5;}
+strong {font-weight: normal;font-family: 'NotoSansKR Bold', sans-serif;}
+
+/* 셀프출력 */
+div.formArea {position: absolute;left: 50%;top: 50%;transform:translate(-50%, -50%);text-align: center;padding: 50px 0;}
+div.formArea input[type=text],
+div.formArea input[type=submit] {display: block;font-family: 'NotoSansKR Bold', sans-serif;}
+
+div.formArea label {display: block;color: #000;font-size: 70px;line-height: 80px;font-family: 'NotoSansKR Regular', sans-serif;}
+div.formArea label strong {display: block;font-family: 'NotoSansKR Bold', sans-serif;font-weight: normal;}
+
+div.formArea input[type=text] {width: 730px;height: 125px;margin: 50px auto;text-align: center; border: 1px solid #ccc;padding: 0 15px;font-size: 45px;line-height: 121px;box-sizing: border-box;}
+div.formArea input[type=submit] {width: 260px;height: 80px;margin: 0 auto;border: 0 none;font-size: 30px;height: 80px;color: #fff;background-color: #374781;}
+
+div.waiting {width: 780px;margin: 0 auto;padding-left: 340px;background: url('image/waiting_bg.png') left center no-repeat;color: #000;font-size: 54px;line-height: 75px;font-family: 'NotoSansKR Bold', sans-serif;letter-spacing:-3px;}
+div.waiting img,
+div.waiting span {display: block;}
+div.waiting img {height: 104px;padding: 60px 0 40px;}
+div.waiting span {margin-top: 35px;text-align: center;font-size: 38px;line-height: 100px;font-family: 'NotoSansKR Medium', sans-serif;background-color: #fffbcb;}
+
+
+/* 출결 */
+div.attendance {text-align: center;padding: 100px 0;color: #000;font-size: 70px;line-height: 80px;font-family: 'NotoSansKR Regular', sans-serif;letter-spacing:-3px;}
+div.attendance strong {display: block;font-family: 'NotoSansKR Bold', sans-serif;font-weight: normal;}
+div.attendance img {display: block;margin: 70px auto 0;}
+
+div.attendanceResult * {margin: 0;padding: 0;list-style: none;}
+div.attendanceResult {text-align: center;padding: 50px 0;}
+div.attendanceResult > div {padding-bottom: 50px;color: #000;font-size: 54px;line-height: 75px;font-family: 'NotoSansKR Bold', sans-serif;letter-spacing:-3px;}
+div.attendanceResult > div span {display: inline-block;padding: 0 10px;color: #e32525;box-shadow: inset 0 -35px 0 #ffef83;}
+
+div.attendanceResult dl,
+div.attendanceResult ul {display: inline-block;vertical-align: top;}
+
+div.attendanceResult dl {position: relative;width: 1000px;padding:35px 0 170px;text-align: center;box-sizing:border-box;}
+div.attendanceResult dt {padding-bottom: 50px;font-size: 100px;line-height: 100px;font-family: 'NotoSansKR Bold', sans-serif;}
+div.attendanceResult dd.border {border: 1px solid #ccc;font-size: 54px;line-height: 150px;background-color: #fff;font-family: 'NotoSansKR Medium', sans-serif;}
+div.attendanceResult dd.border + dd.border {border-top: 0 none;}
+div.attendanceResult dd.stayTime {font-size: 35px;line-height: 75px;color: #505458;}
+div.attendanceResult dd.stayTime span {color: #000;}
+div.attendanceResult dd.stayTime strong {color: #d92e8b;}
+
+div.attendanceResult ul {padding-top: 20px;}
+div.attendanceResult li {margin-top: 20px;font-size: 40px;line-height: 40px;color: #505458;font-family: 'NotoSansKR Medium', sans-serif;}
+div.attendanceResult li strong {color: #2c4199;}
+
+div.attendanceResult dd.point {position: absolute;left: -6px;bottom: -6px;width: 100%;padding: 0 6px;font-size: 70px;line-height: 130px;color: #fff;background-color: #34436d;font-family: 'NotoSansKR Bold', sans-serif;}
+
+div.layerPopup {display: none;z-index: 9999;position: fixed;left: 0;top: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,.5);}
+div.layerPopup > div.popupWrap {position: absolute;left: 50%;top: 50%;transform:translate(-50%, -50%);background-color: #fff;}
+
+div.popupWrap {border-radius: 20px;padding: 40px;box-sizing: border-box;}
+
+div.popupWrap div.close {position: absolute;right: 40px;top: 40px;}
+div.popupWrap div.close a,
+div.popupWrap div.close img {display: block;}
+
+
+div#popupAlert {width: 890px;text-align: center;color: #000;font-size: 34px;line-height: 50px;font-family: 'NotoSansKR Medium', sans-serif;letter-spacing:-1px;}
+div#popupAlert img {display: block;margin: 0 auto 20px;}
+
+
+
+div.print {position: absolute;left: 50%;top: 50%;transform:translate(-50%, -50%);width: 770px;padding: 25px 0 145px 260px;color: #000;font-size: 54px;line-height: 75px;font-family: 'NotoSansKR Bold', sans-serif;letter-spacing:-3px;}
+div.print img {position: absolute;left: 0;top: 0;}
+div.print span {display: block;padding: 0 45px;margin-top: 34px;border-radius: 20px;font-size: 38px;line-height: 100px;background-color: #fffbcb;font-family: 'NotoSansKR Medium', sans-serif;}
+div.print a {position: absolute;left: 50%;bottom: 0;transform:translateX(-50%);display: block;width: 260px;height: 80px;text-decoration: none;text-align: center;font-size: 30px;height: 80px;color: #fff;font-family: 'NotoSansKR Bold', sans-serif;background-color: #352711;}
+

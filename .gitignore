@@ -1,0 +1,41 @@
+# Cursor / 서버 홈
+.cursor/
+.cursor-server/
+.cache/
+.local/
+.config/
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+
+# 로그·임시
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# DB 접속정보 (비밀번호 포함)
+**/include.connect.php
+
+# 사용자 업로드
+event/upload/
+webinar/upload/
+
+# GitHub 100MB 제한에 걸리는 대용량
+*.mp4
+*.zip
+webinar/asset/congress/file/*.pdf
+
+# Backup / copy artifacts (keep on server, do not push)
+**/*bak*
+**/*.bak
+**/* copy*
+**/*_old*
+**/index_bak*
+**/*_copy.php
+**/*_copy.html
+**/index_copy.php
+webinar/html_/
+webinar/html_230728/
+webinar/html_240328/

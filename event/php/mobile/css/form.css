@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+div.join {width: 800px;margin: 0 auto;}
+
+div.join div.agree {}
+div.join div.agreeCon {overflow-x: hidden;overflow-y: scroll;height: 200px;border:1px solid #cbcbcb;padding:20px;}
+div.join div.agree > p {padding-top: 5px;text-align: right;}
+
+div.join dl.agree {margin-top: 30px;}
+div.join dl.agree > dd {margin-top: 10px;padding: 10px;background-color: #f8f8f8;}
+
+div.join div.btn {padding-top: 50px;text-align: center;}
+div.join div.btn a,
+div.join div.btn input,
+div.join div.btn button {min-width:80px;height:46px;padding:7px 30px 11px;font-size:16px;font-weight:normal;}
+div.join div.btn a {min-width:68px;height:auto;padding:12px 20px 14px;}
+
+
+table.inputTbl {}
+table.inputTbl td > *:first-child,
+table.inputTbl td .clear,
+table.inputTbl input[type=radio]:first-child,
+table.inputTbl input[type=checkbox]:first-child {margin-left: 0 !important;}
+
+
+table.inputTbl input[type=text],
+table.inputTbl input[type=password] {width: 170px;}
+
+table.inputTbl input.inputSmall {width: 70px;}
+table.inputTbl input.inputWide {width: 95%;}
+
+
+table.inputTbl input[type=image] {vertical-align: middle;}
+
+table.inputTbl td input[type=radio],
+table.inputTbl td input[type=checkbox] {margin: 6px 0 0 20px;}
+
+
+
+
+table.inputTbl span,
+table.inputTbl label {display: inline-block;vertical-align: top;line-height: 25px;}
+
+table.inputTbl span.note {font-size: 0.8em;color: #f00;}
+
+table.inputTbl td.multi > *,
+table.inputTbl td.phone *,
+table.inputTbl td.address > *,
+table.inputTbl td.email > * {float: left;margin-left: 5px;}
+
+table.inputTbl td.multi input[type=image] {margin-top: 5px;}
+
+table.inputTbl td.phone input {width: 70px;}
+
+table.inputTbl td.address input[type=text] {width: 200px;margin-top: 5px;}
+table.inputTbl td.address input[type=text]:first-child {width: 70px;margin-top: 0;}
+table.inputTbl td.address input[type=text].clear {width: 350px;margin-left: 0;}
+
+table.inputTbl td.email span {margin-left: 5px;}
+
+table.inputTbl td.photo > p,
+table.inputTbl td.photo > div {display: inline-block;}
+table.inputTbl td.photo > p {width: 90px;height: 90px;border: 1px solid #dfdfdf;vertical-align: top;background-color: #f8f8f8;}
+table.inputTbl td.photo > p img {width: 100%;height: 100%;}
+table.inputTbl td.photo > div {padding-left: 10px;vertical-align: bottom;}
+
+table.inputTbl td.photo div input[type=checkbox] {margin-top: 0;}
+table.inputTbl td.photo div label {padding-left: 5px;}
+
+
+
+
+
+

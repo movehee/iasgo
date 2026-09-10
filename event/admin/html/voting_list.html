@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 7]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie7"><![endif]-->
+<!--[if IE 8]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie8"><![endif]-->
+<!--[if IE 9]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="kor" xml:lang="kor"><!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<title>관리자</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1" />
+<link type="text/css" rel="stylesheet" href="/admin/css/common_v2.css" />
+<link type="text/css" rel="stylesheet" href="/admin/css/voting.css" />
+<link type="text/css" rel="stylesheet" href="/admin/css/feedback.css" />
+<!--[if lt IE 8]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js">IE7_PNG_SUFFIX=".png";</script>
+<![endif]-->
+
+<link href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" rel="stylesheet">
+<script src="//code.jquery.com/jquery-1.11.1.js"></script>
+<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+<script type="text/javascript" src="/admin/script/user.js"></script>
+
+
+</head>
+<body>
+
+<div class="wrapper">
+
+	<div id="headerWrap">
+		<div>
+			<dl id="skipNavi">
+				<dt>Skip Navigation</dt>
+				<dd><a href="#container">Skip to contents</a></dd>
+			</dl>
+	
+			<h1><a href="./member.php" title="홈으로 이동"><img src="/admin/image/header_logo.png?>" alt="Easy Voting 관리자"></a></h1>    
+			
+			<ul id="gnb">
+				<li class="on"><a href="#">Voting</a></li>
+				<li><a href="#">Question</a></li>
+				<li><a href="#">Feedback</a></li>				
+				<li><a href="#">CSS 설정</a></li>				
+			</ul>
+				
+			<p class="util"><a href="/admin/php/login.php" class="logout">Logout</a></p>
+			
+		</div>
+	</div> 
+	<!-- //headerWrap -->
+
+	<div id="container">
+	
+		<h2>행사명 표시</h2>
+
+		<div class="contents">
+
+			<div class="utilBtn btn">
+				<div class="fl">
+					<a href="#" class="btnExcel"><img src="/admin/image/icon_excel.png" alt=""> 엑셀다운</a>
+				</div>
+
+				<div class="fr">
+					<a href="#" class="btnViewAll">전체 펼쳐보기</a>
+					<a href="#" class="votingAllreset"><img src="/admin/image/icon_reset.png" alt=""> VOTING 결과<br />전체 초기화</a>
+					<a href="#" class="btnVoting">VOTING<br />문제 추가</a>
+					<a href="#" class="btnAdd">예비문제<br />추가</a>
+				</div>
+			</div>
+			<!-- //utilBtn -->
+
+			<div class="utilBtn btn tm20">
+				<div class="fl">
+					<a href="#" class="btnDef">이름순 결과보기</a>
+					<a href="#" class="btnDef">랭킹순 결과보기</a>
+				</div>
+
+			</div>
+			<!-- //utilBtn -->
+
+
+
+			<div class="voting">
+				
+
+				<table class="tblDef">
+					<colgroup>
+						<col style="width: 168px;">
+						<col style="width: 145px;">
+						<col style="width: 145px;">
+						<col style="width: 145px;">
+						<col style="width: 145px;">
+						<col style="width: 145px;">
+						<col style="width: *;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>
+								<span>Q1</span>
+								<span class="btn folding"><a href="#">접기</a></span>
+							</th>
+							<td colspan="5" class="tit">질문 내용질문 내용질문 내용</td>
+							<td><img src="/admin/image/thumb_noImg.png" alt="Thumbnail"></td>
+						</tr>
+						<tr class="foldingArea">
+							<th><span>답변</span></th>
+							<td colspan="5" class="type01">
+
+								<dl class="voting">
+									<dt>① 1번 입니다. <img src="/admin/image/icon_correct.png" alt="정답"></dt>
+									<dd>
+										<div class="graph">
+											<div class="bar01" style="width:10%;">10%</div>
+										</div>
+									</dd>
+
+									<dt>② 2번 입니다.</dt>
+									<dd>
+										<div class="graph">
+											<div class="bar01" style="width:50%;">50%</div>
+										</div>
+									</dd>
+
+									<dt>③ 3번 입니다.</dt>
+									<dd>
+										<div class="graph">
+											<div class="bar01" style="width:23%;">23%</div>
+										</div>
+									</dd>
+
+									<dt>④ 4번 입니다.</dt>
+									<dd>
+										<div class="graph">
+											<div class="bar01" style="width:17%;">17%</div>
+										</div>
+									</dd>
+								</dl>
+							</td>
+							<td class="btn">
+								<a href="#" class="fullScreen"><img src="/admin/image/icon_fullScreen.png" alt="전체화면"></a>
+								<a href="#" class="votingReset"><img src="/admin/image/icon_votingReset.png" alt="VOTING 결과 초기화"></a>
+							</td>
+						</tr>
+						<tr class="foldingArea">
+							<th>시간</th>
+							<td>5초</td>
+							<th>보팅타입</th>
+							<td>보팅</td>
+							<th>UI 타입</th>
+							<td>1열</td>
+							<td class="btn">
+								<div class="util">
+									<a href="#" class="btnGrey">수정</a>
+									<a href="#" class="btnPoint">삭제</a>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="tblDef">
+					<colgroup>
+						<col style="width: 168px;">
+						<col style="width: 145px;">
+						<col style="width: 145px;">
+						<col style="width: 145px;">
+						<col style="width: 145px;">
+						<col style="width: 145px;">
+						<col style="width: *;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>
+								<span>Q2</span>
+								<span class="btn folding"><a href="#">접기</a></span>
+							</th>
+							<td colspan="5" class="tit">질문 내용질문 내용질문 내용</td>
+							<td><img src="/admin/image/thumb_noImg.png" alt="Thumbnail"></td>
+						</tr>
+						<tr class="foldingArea">
+							<th><span>답변</span></th>
+							<td colspan="5" class="type02">
+								<div>
+
+									<dl class="voting">
+										<dt>① 1번 입니다. <img src="/admin/image/icon_correct.png" alt="정답"></dt>
+										<dd>
+											<div class="img">
+												<img src="/admin/image/cat01.jpg" alt="">
+											</div>
+										</dd>
+									</dl>
+
+									<dl class="voting">
+										<dt>② 2번 입니다.</dt>
+										<dd>
+											<div class="img">
+												<img src="/admin/image/cat02.jpg" alt="">
+											</div>
+										</dd>
+									</dl>
+
+									<dl class="voting clear">
+										<dt>③ 3번 입니다.</dt>
+										<dd>
+											<div class="img">
+												<img src="/admin/image/cat02.jpg" alt="">
+											</div>
+										</dd>
+									</dl>
+
+									<dl class="voting">
+										<dt>④ 4번 입니다.</dt>
+										<dd>
+											<div class="img">
+												<img src="/admin/image/cat01.jpg" alt="">
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</td>
+							<td class="btn">
+								<a href="#" class="fullScreen"><img src="/admin/image/icon_fullScreen.png" alt="전체화면"></a>
+								<a href="#" class="votingReset"><img src="/admin/image/icon_votingReset.png" alt="VOTING 결과 초기화"></a>
+							</td>
+						</tr>
+						<tr class="foldingArea">
+							<th>시간</th>
+							<td>5초</td>
+							<th>보팅타입</th>
+							<td>보팅</td>
+							<th>UI 타입</th>
+							<td>1열</td>
+							<td class="btn">
+								<div class="util">
+									<a href="#" class="btnGrey">수정</a>
+									<a href="#" class="btnPoint">삭제</a>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="tblDef">
+					<colgroup>
+						<col style="width: 168px;">
+						<col style="width: 145px;">
+						<col style="width: 145px;">
+						<col style="width: 145px;">
+						<col style="width: 145px;">
+						<col style="width: 145px;">
+						<col style="width: *;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>
+								<span>Q3</span>
+								<span class="btn folding"><a href="#">접기</a></span>
+							</th>
+							<td colspan="5" class="tit">질문 내용질문 내용질문 내용</td>
+							<td><img src="/admin/image/thumb_noImg.png" alt="Thumbnail"></td>
+						</tr>
+						<tr class="foldingArea">
+							<th><span>답변</span></th>
+							<td colspan="5" class="type01">
+
+								<dl class="voting">
+									<dt>① 1번 입니다. <img src="/admin/image/icon_correct.png" alt="정답"></dt>
+									<dd>
+										<ul>
+											<li>
+												<span>1차 : </span>
+												<div class="graph">
+													<div class="bar01" style="width:10%;">10%</div>
+												</div>
+											</li>
+											<li>
+												<span>2차 : </span>
+												<div class="graph">
+													<div class="bar02" style="width:10%;">10%</div>
+												</div>
+											</li>
+										</ul>
+									</dd>
+
+									<dt>② 2번 입니다.</dt>
+									<dd>
+										<ul>
+											<li>
+												<span>1차 : </span>
+												<div class="graph">
+													<div class="bar01" style="width:10%;">10%</div>
+												</div>
+											</li>
+											<li>
+												<span>2차 : </span>
+												<div class="graph">
+													<div class="bar02" style="width:10%;">10%</div>
+												</div>
+											</li>
+										</ul>
+									</dd>
+
+									<dt>③ 3번 입니다.</dt>
+									<dd>
+										<ul>
+											<li>
+												<span>1차 : </span>
+												<div class="graph">
+													<div class="bar01" style="width:10%;">10%</div>
+												</div>
+											</li>
+											<li>
+												<span>2차 : </span>
+												<div class="graph">
+													<div class="bar02" style="width:10%;">10%</div>
+												</div>
+											</li>
+										</ul>
+									</dd>
+
+									<dt>④ 4번 입니다.</dt>
+									<dd>
+										<ul>
+											<li>
+												<span>1차 : </span>
+												<div class="graph">
+													<div class="bar01" style="width:10%;">10%</div>
+												</div>
+											</li>
+											<li>
+												<span>2차 : </span>
+												<div class="graph">
+													<div class="bar02" style="width:10%;">10%</div>
+												</div>
+											</li>
+										</ul>
+									</dd>
+								</dl>
+							</td>
+							<td class="btn">
+								<a href="#" class="fullScreen"><img src="/admin/image/icon_fullScreen.png" alt="전체화면"></a>
+								<a href="#" class="votingReset"><img src="/admin/image/icon_votingReset.png" alt="VOTING 결과 초기화"></a>
+							</td>
+						</tr>
+						<tr class="foldingArea">
+							<th>시간</th>
+							<td>5초</td>
+							<th>보팅타입</th>
+							<td>보팅</td>
+							<th>UI 타입</th>
+							<td>1열</td>
+							<td class="btn">
+								<div class="util">
+									<a href="#" class="btnGrey">수정</a>
+									<a href="#" class="btnPoint">삭제</a>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+			<!-- //voting -->
+
+	
+		</div>
+
+	</div>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+
+
+
+</body>
+</html>

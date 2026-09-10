@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 7]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie7"><![endif]-->
+<!--[if IE 8]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie8"><![endif]-->
+<!--[if IE 9]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="kor" xml:lang="kor"><!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<title>관리자</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1" />
+<link type="text/css" rel="stylesheet" href="/admin/css/common_v2.css" />
+<link type="text/css" rel="stylesheet" href="/admin/css/voting.css" />
+<link type="text/css" rel="stylesheet" href="/admin/css/feedback.css" />
+<!--[if lt IE 8]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js">IE7_PNG_SUFFIX=".png";</script>
+<![endif]-->
+<script type="text/javascript" src="/admin/script/jquery.min.1.7.1.js"></script>
+<script type="text/javascript" src="/admin/script/jquery.placeholder.js"></script>
+<script type="text/javascript" src="/admin/script/user.js"></script>
+
+<script src="/script/1.7.1.jquery.min.js"></script>  
+<script src="/script/1.8.18.jquery-ui.min.js"></script>  
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script>
+  $( function() {
+    $( document ).tooltip();
+  } );
+  </script>
+
+<style>
+.tooltipPoint{cursor: help !important;}
+
+
+.ui-tooltip {
+  padding: 5px 10px;
+  color: #0034ce;
+  box-shadow: 0 0 10px #ce1d1d;
+ 
+  font-size:13px;
+}
+
+</style>
+ 
+
+
+
+
+</head>
+<body>
+
+
+
+<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+<script src="/autocomplete/lib/jquery-1.11.2.min.js"></script>
+
+<script src="/autocomplete/dist/jquery.easy-autocomplete.min.js" type="text/javascript" ></script>
+<link href="/autocomplete/dist/easy-autocomplete.min.css" rel="stylesheet" type="text/css">
+
+<div class="popupSetting">
+	<form enctype="multipart/form-data" name="registform" id="registform" action="./post.php" method="post"> 
+
+		<table class="inputTbl al">
+			<colgroup>
+				<col style="width: 25%;">
+				<col style="width: 75%;">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th><label for="">사전여부</label></th>
+					<td>
+						<select name="" id="">
+							<option value="">현장등록</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th><label for="">Country</label></th>
+					<td>
+						<select name="" id="">
+							<option value="">Country</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th><label for="" title="Required" class="essen">User ID(Email)</label></th>
+					<td>
+						<div class="withBtn">
+							<input type="text" name="" id="">
+							<span class="btn"><a href="#" class="btnDef">중복체크</a></span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th><label for="" title="Required" class="essen">Password</label></th>
+					<td><input type="password" name="" id=""></td>
+				</tr>
+				<tr>
+					<th><label for="" title="Required" class="essen">Confirmed Password</label></th>
+					<td><input type="password" name="" id=""></td>
+				</tr>
+				<tr>
+					<th><label for="" title="Required" class="essen">Affiliation</label></th>
+					<td><input type="text" name="" id=""></td>
+				</tr>
+				<tr>
+					<th><label for="" title="Required" class="essen">Department</label></th>
+					<td><input type="text" name="" id=""></td>
+				</tr>
+				<tr>
+					<th><label for="" title="Required" class="essen">Title</label></th>
+					<td><input type="text" name="" id=""></td>
+				</tr>
+				<tr>
+					<th><label for="" title="Required" class="essen">Degree</label></th>
+					<td>
+						<select name="" id="">
+							<option value="">M.D.</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th><label for="" title="Required" class="essen">mobile</label></th>
+					<td>
+						<div class="withBtn">
+							<input type="text" name="" id="">
+							<span class="btn"><a href="#" class="btnDef">중복체크</a></span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th><span title="Required" class="essen">면허구분</span></th>
+					<td class="multi">
+						<input type="radio" name="" id=""><label for="">의사</label>
+						<input type="radio" name="" id=""><label for="">간호사</label>
+						<input type="radio" name="" id=""><label for="">면허번호 없음</label>
+					</td>
+				</tr>
+				<tr>
+					<th><label for="" title="Required" class="essen">면허번호</label></th>
+					<td><input type="text" name="" id=""></td>
+				</tr>
+				<tr>
+					<th><label for="" title="Required" class="essen">성명(국문)</label></th>
+					<td><input type="text" name="" id=""></td>
+				</tr>
+				<tr>
+					<th><label for="" title="Required" class="essen">소속(국문)</label></th>
+					<td><input type="text" name="" id=""></td>
+				</tr>
+				<tr>
+					<th><label for="" title="Required" class="essen">주소</label></th>
+					<td class="address">
+						<input type="text" name="" id=""><span class="btn"><a href="#" class="btnDef">우편번호검색</a></span>
+						<input type="text" name="" id="" class="clear"><input type="text" name="" id="">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="btn fullBtn">
+			<input type="submit" value="등록" class="btnPoint btnBig">
+		</div>
+	</form>
+</div>
+	
+</div> <!-- //wrapper -->
+
+
+
+</body>
+</html>

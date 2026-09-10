@@ -1,0 +1,66 @@
+@charset "utf-8";
+@import url('/css/font-awesome.css');
+@import url('/css/simple-line-icons.css');
+@import url('/css/font/NanumBarunGothic.css');
+
+* {font-family: 'NanumGothicLight', sans-serif;-webkit-text-size-adjust: 100%;}
+
+body, input[type="text"], input[type="password"], input[type="file"], select, textarea, button {font-family: 'NanumGothicLight', sans-serif;font-size:30px;line-height:1.5;font-weight:normal;color:#414141;}
+
+.fSize_s {font-size: 0.8em;}
+.fSize_ss {font-size: 0.6em;
+text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;}
+
+
+
+
+div.wrapper {position: relative;min-width:1300px;min-height: 737px;padding: 30px;margin: 0 auto;background-color: #f4f5f5;box-sizing:border-box;}
+div.fullScreen {overflow-x: hidden;overflow-y: auto;min-width:1300px;padding: 0 60px 0 37%;box-shadow:0 0 20px rgba(0,0,0,.5);background-color: #fff;box-sizing:border-box;}
+
+div.question {z-index: 20;position: fixed;left: 0;top: 0;width: 34%;min-width: 440px;min-height: 797px;padding: 40px 40px 160px;box-shadow:5px 5px 10px rgba(0,0,0,.5);background-color: #bb2e21;color: #fff;box-sizing:border-box;}
+div.question div.img {height: 220px;padding-bottom: 50px;}
+div.question div.img img {display: block;max-height:100%;margin: 0 auto;box-shadow:0 4px 10px rgba(0,0,0,.6);}
+
+div.question div.text {font-size: 1.2em;}
+/*
+div.answer {padding: 40px 0;}
+dl.option {padding-top: 40px}
+dl.option:first-child {padding-top: 10px;}
+*/
+div.answer {padding: 0 0 30px;}
+dl.option {padding-top: 30px}
+dl.option.s {padding-top: 25px}
+dl.option.ss {padding-top: 20px}
+
+div.graphBar {height: 35px;margin-top: 10px;background-color: #ececec;}
+div.graphBar:first-child {}
+
+
+div.graphBar > div {position: relative;float: left;height: 35px;background-color: #e12127;}
+div.graphBar > div.point {background-color: #12a3df;}
+div.graphBar > div span {position: absolute;left: 15px;top: 48%;color: #fff;font-size:0.7em;line-height: 1em;margin-top: -0.5em;}
+
+div.util {z-index: 30;position: fixed;left: 0;bottom: 0;width: 34%;height: 100%;}
+div.util > span.result {position: absolute;left: 0;top: 250px;width: 100%;}
+div.util > span.result img {display: block;margin: 0 auto;}
+div.util a.start,
+div.util span.count {position: fixed;left:100px;bottom: 40px;width: 25%;padding: 20px 0;border-radius:65px;margin: 0 auto;background-color: #242424;color: #fff;font-weight: bold;font-size: 40px;line-height:60px;text-decoration: none;text-align: center;}
+div.util span.count {font-size: 60px;}
+div.util a.start img {height: 60px;vertical-align: top;padding-right: 20px;}
+
+div.util a.prev,
+div.util a.next {position: fixed;bottom: 0;width: 70px;height: 70px;background-color:rgba(0,0,0,.3);text-align: center;}
+div.util a.prev {left: 0;}
+div.util a.next {right: 0;}
+
+div.util a.prev i,
+div.util a.next i {font-size: 40px;padding-top: 15px;color: rgba(255,255,255,.3);}
+
+div.util a.exit {position: fixed;left: 0;bottom: 0;width: 70px;height: 70px;text-align: center;opacity: 0;}
+div.util a.exit i {font-size: 40px;padding-top: 15px;color: rgba(255,255,255,.3);}
+div.util a.exit:hover {opacity: 1;}

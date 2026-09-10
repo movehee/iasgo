@@ -1,0 +1,292 @@
+@charset "utf-8";
+
+
+/* Button - reset */
+.btnAdmin a, .rBtnAdmin a,
+.btnAdmin button, .rBtnAdmin button,
+.btnAdmin input, .rBtnAdmin input {font-family:'돋움', Dotum, 'Apple Gothic', sans-serif !important;}
+.btnAdmin, .btnAdmin a, .btnAdmin button, .btnAdmin input,
+.rBtnAdmin, .rBtnAdmin a, .rBtnAdmin button, .rBtnAdmin input {overflow:visible; position:relative; display:-moz-inline-stack; display:inline-block; margin:0; text-decoration:none !important; border:0 none; white-space:nowrap; text-align:center; background:none;}
+.btnAdmin, .rBtnAdmin {padding:0; vertical-align:middle;}
+.btnAdmin a, .btnAdmin button, .btnAdmin input,
+.rBtnAdmin a, .rBtnAdmin button, .rBtnAdmin input {vertical-align:top; cursor:pointer; text-decoration:none;} /* vertical-align:top - ie7 깨짐 방지 */
+
+/* ============ btnAdmin ============ */
+.btnAdmin {border:1px solid #000; background-color:#000;}
+.btnAdmin a,
+.btnAdmin button,
+.btnAdmin input {font-weight:bold; color:#fff;}
+
+/* size */
+.btnAdmin.xlarge {height:38px;}
+.btnAdmin.xlarge a,
+.btnAdmin.xlarge button,
+.btnAdmin.xlarge input {height:38px; line-height:40px; padding:0 45px; font-size:16px;}
+.btnAdmin.large {height:32px;}
+.btnAdmin.large a,
+.btnAdmin.large button,
+.btnAdmin.large input {height:32px; line-height:34px; padding:0 32px; font-size:14px;}
+.btnAdmin.medium {height:22px;}
+.btnAdmin.medium a,
+.btnAdmin.medium button,
+.btnAdmin.medium input {height:22px; line-height:24px; padding:0 13px; font-size:12px; font-weight:normal;}
+.btnAdmin.small {height:18px;}
+.btnAdmin.small a,
+.btnAdmin.small button,
+.btnAdmin.small input {height:18px; line-height:20px; padding:0 8px; font-size:11px; font-weight:normal;}
+@-moz-document url-prefix() {
+	.btnAdmin.xlarge button,
+	.btnAdmin.xlarge input {line-height:38px;}
+	.btnAdmin.large button,
+	.btnAdmin.large input {line-height:32px;}
+	.btnAdmin.medium button,
+	.btnAdmin.medium input {line-height:20px;}
+	.btnAdmin.small button,
+	.btnAdmin.small input {line-height:16px;}
+}
+
+/* color */
+.btnAdmin.white {border-color:#c3c3c3; background-color:#fff;}
+.btnAdmin.white a,
+.btnAdmin.white button,
+.btnAdmin.white input {color:#6b6b6b;}
+.btnAdmin.gray {border-color:#989898; background-color:#a7a7a7;}
+.btnAdmin.darkGray {border-color:#424242; background-color:#585858;}
+.btnAdmin.black {border-color:#000; background-color:#000;}
+.btnAdmin.red {border-color:#a81616; background-color:#d21f1f;}
+.btnAdmin.orange {border-color:#d44f07; background-color:#ff7f00;}
+.btnAdmin.green {border-color:#608f07; background-color:#77aa15;}
+.btnAdmin.darkCyan {border-color:#08726b; background-color:#10938b;}
+.btnAdmin.lightBlue {border-color:#1090b0; background-color:#00abd5;}
+.btnAdmin.blue {border-color:#004386; background-color:#0051a3;}
+.btnAdmin.navy {border-color:#00164e; background-color:#002074;}
+.btnAdmin.purple {border-color:#350598; background-color:#431999;}
+.btnAdmin.violet {border-color:#681d93; background-color:#9351b9;}
+.btnAdmin.darkPink {border-color:#ad095e; background-color:#d1006d;}
+
+/* 테두리가 강조된 연한 버튼 */
+.btnAdmin.empty {background-color:#fff !important;}
+.btnAdmin.empty.gray {border-color:#c3c3c3;}
+.btnAdmin.empty.gray a,
+.btnAdmin.empty.gray button,
+.btnAdmin.empty.gray input {color:#6b6b6b;}
+.btnAdmin.empty.darkGray {border-color:#424242;}
+.btnAdmin.empty.darkGray a,
+.btnAdmin.empty.darkGray button,
+.btnAdmin.empty.darkGray input {color:#000;}
+.btnAdmin.empty.black {border-color:#424242;}
+.btnAdmin.empty.black a,
+.btnAdmin.empty.black button,
+.btnAdmin.empty.black input {color:#000;}
+.btnAdmin.empty.red {border-color:#d13838;}
+.btnAdmin.empty.red a,
+.btnAdmin.empty.red button,
+.btnAdmin.empty.red input {color:#a21414;}
+.btnAdmin.empty.orange {border-color:#e6773a;}
+.btnAdmin.empty.orange a,
+.btnAdmin.empty.orange button,
+.btnAdmin.empty.orange input {color:#c7441b;}
+.btnAdmin.empty.green {border-color:#608f07;}
+.btnAdmin.empty.green a,
+.btnAdmin.empty.green button,
+.btnAdmin.empty.green input {color:#3c7400;}
+.btnAdmin.empty.darkCyan {border-color:#08726b;}
+.btnAdmin.empty.darkCyan a,
+.btnAdmin.empty.darkCyan button,
+.btnAdmin.empty.darkCyan input {color:#005c6a;}
+.btnAdmin.empty.lightBlue {border-color:#1090b0;}
+.btnAdmin.empty.lightBlue a,
+.btnAdmin.empty.lightBlue button,
+.btnAdmin.empty.lightBlue input {color:#0088aa;}
+.btnAdmin.empty.blue {border-color:#004386;}
+.btnAdmin.empty.blue a,
+.btnAdmin.empty.blue button,
+.btnAdmin.empty.blue input {color:#004386;}
+.btnAdmin.empty.navy {border-color:#004386;}
+.btnAdmin.empty.navy a,
+.btnAdmin.empty.navy button,
+.btnAdmin.empty.navy input {color:#004386;}
+.btnAdmin.empty.purple {border-color:#350598;}
+.btnAdmin.empty.purple a,
+.btnAdmin.empty.purple button,
+.btnAdmin.empty.purple input {color:#350598;}
+.btnAdmin.empty.violet {border-color:#681d93;}
+.btnAdmin.empty.violet a,
+.btnAdmin.empty.violet button,
+.btnAdmin.empty.violet input {color:#681d93;}
+.btnAdmin.empty.darkPink {border-color:#c00064;}
+.btnAdmin.empty.darkPink a,
+.btnAdmin.empty.darkPink button,
+.btnAdmin.empty.darkPink input {color:#d6006f;}
+
+
+/* ============ rBtnAdmin ============ */
+.rBtnAdmin {padding-left:3px; background:url('./image/bg_black.gif') 0 0 no-repeat;}
+.rBtnAdmin a,
+.rBtnAdmin button,
+.rBtnAdmin input {font-weight:bold; color:#fff; background:url('./image/bg_black.gif') 100% 0 no-repeat;}
+
+/* size */
+.rBtnAdmin.xlarge {height:39px; background-position:0 -150px;}
+.rBtnAdmin.xlarge a,
+.rBtnAdmin.xlarge button,
+.rBtnAdmin.xlarge input {height:39px; line-height:41px; padding:0 44px 0 41px; font-size:16px; background-position:100% -150px;}
+.rBtnAdmin.large {height:34px; background-position:0 -100px;}
+.rBtnAdmin.large a,
+.rBtnAdmin.large button,
+.rBtnAdmin.large input {height:34px; line-height:36px; padding:0 33px 0 30px; font-size:14px; background-position:100% -100px;}
+.rBtnAdmin.medium {height:24px; background-position:0 -50px;}
+.rBtnAdmin.medium a,
+.rBtnAdmin.medium button,
+.rBtnAdmin.medium input {height:24px; line-height:26px; padding:0 14px 0 11px; font-size:12px; font-weight:normal; background-position:100% -50px;}
+.rBtnAdmin.small {height:20px; background-position:0 0;}
+.rBtnAdmin.small a,
+.rBtnAdmin.small button,
+.rBtnAdmin.small input {height:20px; line-height:22px; padding:0 9px 0 6px; font-size:11px; font-weight:normal; background-position:100% 0;}
+@-moz-document url-prefix() {
+	.rBtnAdmin.xlarge button,
+	.rBtnAdmin.xlarge input {line-height:39px;}
+	.rBtnAdmin.large button,
+	.rBtnAdmin.large input {line-height:34px;}
+	.rBtnAdmin.medium button,
+	.rBtnAdmin.medium input {line-height:22px;}
+	.rBtnAdmin.small button,
+	.rBtnAdmin.small input {line-height:18px;}
+}
+
+/* color */
+.rBtnAdmin.white,
+.rBtnAdmin.white a,
+.rBtnAdmin.white button,
+.rBtnAdmin.white input {color:#6b6b6b; background-image:url('./image/bg_white.gif');}
+
+.rBtnAdmin.gray,
+.rBtnAdmin.gray a,
+.rBtnAdmin.gray button,
+.rBtnAdmin.gray input {background-image:url('./image/bg_gray.gif');}
+
+.rBtnAdmin.darkGray,
+.rBtnAdmin.darkGray a,
+.rBtnAdmin.darkGray button,
+.rBtnAdmin.darkGray input {background-image:url('./image/bg_dark_gray.gif');}
+
+.rBtnAdmin.black,
+.rBtnAdmin.black a,
+.rBtnAdmin.black button,
+.rBtnAdmin.black input {background-image:url('./image/bg_black.gif');}
+
+.rBtnAdmin.red,
+.rBtnAdmin.red a,
+.rBtnAdmin.red button,
+.rBtnAdmin.red input {background-image:url('./image/bg_red.gif');}
+
+.rBtnAdmin.orange,
+.rBtnAdmin.orange a,
+.rBtnAdmin.orange button,
+.rBtnAdmin.orange input {background-image:url('./image/bg_orange.gif');}
+
+.rBtnAdmin.green,
+.rBtnAdmin.green a,
+.rBtnAdmin.green button,
+.rBtnAdmin.green input {background-image:url('./image/bg_green.gif');}
+
+.rBtnAdmin.darkCyan,
+.rBtnAdmin.darkCyan a,
+.rBtnAdmin.darkCyan button,
+.rBtnAdmin.darkCyan input {background-image:url('./image/bg_dark_cyan.gif');}
+
+.rBtnAdmin.lightBlue,
+.rBtnAdmin.lightBlue a,
+.rBtnAdmin.lightBlue button,
+.rBtnAdmin.lightBlue input {background-image:url('./image/bg_light_blue.gif');}
+
+.rBtnAdmin.blue,
+.rBtnAdmin.blue a,
+.rBtnAdmin.blue button,
+.rBtnAdmin.blue input {background-image:url('./image/bg_blue.gif');}
+
+.rBtnAdmin.navy,
+.rBtnAdmin.navy a,
+.rBtnAdmin.navy button,
+.rBtnAdmin.navy input {background-image:url('./image/bg_navy.gif');}
+
+.rBtnAdmin.purple,
+.rBtnAdmin.purple a,
+.rBtnAdmin.purple button,
+.rBtnAdmin.purple input {background-image:url('./image/bg_purple.gif');}
+
+.rBtnAdmin.violet,
+.rBtnAdmin.violet a,
+.rBtnAdmin.violet button,
+.rBtnAdmin.violet input {background-image:url('./image/bg_violet.gif');}
+
+.rBtnAdmin.darkPink,
+.rBtnAdmin.darkPink a,
+.rBtnAdmin.darkPink button,
+.rBtnAdmin.darkPink input {background-image:url('./image/bg_dark_pink.gif');}
+
+/* 테두리가 강조된 연한 버튼 */
+.rBtnAdmin.empty.gray,
+.rBtnAdmin.empty.gray a,
+.rBtnAdmin.empty.gray button,
+.rBtnAdmin.empty.gray input {color:#6b6b6b; background-image:url('./image/bg_white.gif');}
+
+.rBtnAdmin.empty.darkGray,
+.rBtnAdmin.empty.darkGray a,
+.rBtnAdmin.empty.darkGray button,
+.rBtnAdmin.empty.darkGray input {color:#6b6b6b; background-image:url('./image/bg_white.gif');}
+
+.rBtnAdmin.empty.black,
+.rBtnAdmin.empty.black a,
+.rBtnAdmin.empty.black button,
+.rBtnAdmin.empty.black input {color:#6b6b6b; background-image:url('./image/bg_white.gif');}
+
+.rBtnAdmin.empty.red,
+.rBtnAdmin.empty.red a,
+.rBtnAdmin.empty.red button,
+.rBtnAdmin.empty.red input {color:#9f2929; background-image:url('./image/bg_red_empty.gif');}
+
+.rBtnAdmin.empty.orange,
+.rBtnAdmin.empty.orange a,
+.rBtnAdmin.empty.orange button,
+.rBtnAdmin.empty.orange input {color:#c7441b; background-image:url('./image/bg_orange_empty.gif');}
+
+.rBtnAdmin.empty.green,
+.rBtnAdmin.empty.green a,
+.rBtnAdmin.empty.green button,
+.rBtnAdmin.empty.green input {color:#3c7400; background-image:url('./image/bg_green_empty.gif');}
+
+.rBtnAdmin.empty.darkCyan,
+.rBtnAdmin.empty.darkCyan a,
+.rBtnAdmin.empty.darkCyan button,
+.rBtnAdmin.empty.darkCyan input {color:#005c6a; background-image:url('./image/bg_dark_cyan_empty.gif');}
+
+.rBtnAdmin.empty.lightBlue,
+.rBtnAdmin.empty.lightBlue a,
+.rBtnAdmin.empty.lightBlue button,
+.rBtnAdmin.empty.lightBlue input {color:#0078aa; background-image:url('./image/bg_light_blue_empty.gif');}
+
+.rBtnAdmin.empty.blue,
+.rBtnAdmin.empty.blue a,
+.rBtnAdmin.empty.blue button,
+.rBtnAdmin.empty.blue input {color:#004386; background-image:url('./image/bg_blue_empty.gif');}
+
+.rBtnAdmin.empty.navy,
+.rBtnAdmin.empty.navy a,
+.rBtnAdmin.empty.navy button,
+.rBtnAdmin.empty.navy input {color:#214090; background-image:url('./image/bg_navy_empty.gif');}
+
+.rBtnAdmin.empty.purple,
+.rBtnAdmin.empty.purple a,
+.rBtnAdmin.empty.purple button,
+.rBtnAdmin.empty.purple input {color:#5832a6; background-image:url('./image/bg_purple_empty.gif');}
+
+.rBtnAdmin.empty.violet,
+.rBtnAdmin.empty.violet a,
+.rBtnAdmin.empty.violet button,
+.rBtnAdmin.empty.violet input {color:#5832a6; background-image:url('./image/bg_purple_empty.gif');}
+
+.rBtnAdmin.empty.darkPink,
+.rBtnAdmin.empty.darkPink a,
+.rBtnAdmin.empty.darkPink button,
+.rBtnAdmin.empty.darkPink input {color:#e81582; background-image:url('./image/bg_dark_pink_empty.gif');}

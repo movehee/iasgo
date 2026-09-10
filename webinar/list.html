@@ -1,0 +1,427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>웹 작업현황판 | KCR 2023</title>
+<style type="text/css">
+* {margin:0; padding:0;}
+html {overflow-y:scroll;}
+body {background:#fff; color:#666; font:12px/1.5 Malgun Gothic, Tahoma, Sans-serif;}
+a {color:#27e; text-decoration:none;}
+a:focus, a:hover, a:active {text-decoration:underline;}
+
+em {color:#f00;}
+
+.header {padding:0.5em; font:12px/1.5 Malgun Gothic, Tahoma, Sans-serif;}
+.header h1 {color:#444; font-size:2em;}
+.header h1 strong {font-size:70%;}
+.header .nav {list-style:none; background:#969696; padding:0.5em 0.5em 0.2em; color:#f9f9f9; font-weight:bold; font-size:1.1em;}
+.header .nav li {display:inline; margin-right:0.5em;}
+.header .nav li a {color:#f9f9f9;}
+.header .nav li a.on {color:#fff !important; border-bottom:2px solid #3e3e3e; text-shadow:#7c7c7c 2px 1px 2px; text-decoration:none; font-size:105%;}
+.header .nav-otherlink {list-style:none; text-align:right; padding:0.5em 0.5em 0.2em; color:#969696; font-size:1em;}
+.header .nav-otherlink li {display:inline;}
+.header .nav-otherlink li a {color:#969696; font-weight:bold;}
+.header .nav-otherlink li a.on {color:#3e3e3e;}
+.header .nav-otherlink li a.on:before {content:'→'; font-size:0.9em;}
+.rule {background:#f7f7f7; margin:0 0.8em 2em; padding:0.5em; font-size:95%;}
+.rule dt {margin-bottom:0.3em; font-weight:bold;}
+.rule dd {padding-left:0.5em;}
+.rule dd ul {list-style-type:square; margin-left:1.2em;}
+.total {margin:0 1em 0.5em; padding-left:0.3em; font-size:0.9em; font-weight:bold; color:#888;}
+.body {padding-bottom:10em;}
+.section {margin:0 1em;}
+.section + .section {margin-top:1em;}
+.section .title {margin:0; padding:1em 2em; border:1px solid #ccc; background-color:#0295C9; color:#fff; font-weight:bold; font-size:125%; margin-top:-1px; position:relative; *zoom:1; cursor:pointer;}
+.section .title span {font-weight:normal;font-size:0.8em;}
+.section table {width:100%; border-collapse:collapse; border-spacing:0; border:0;}
+.section table caption {display:none;}
+.section table th {color:#333; background-color:#eee; font-size:11px; text-align:center;}
+.section table td {text-align:left; width:10%;}
+.section table th, table td {padding:0.3em; border:1px solid #ddd; }
+.section table tr.depth-3 td:first-child,
+.section table tr.depth-3 td:nth-child(2),
+.section table tr.depth-3 .file {background-color:#e3f994;}
+.section table tr.controller .file:after {content:'ctr'; display:inline-block; font-size:12px; color:#fff; min-width:14px; height:14px; border-radius:7px; background-color:#cf6a18; padding:0 5px; text-align:center; line-height:11px; vertical-align:middle; margin-left:4px;}
+.section table td.tit {color:#333;}
+.section table td.file {width:150px; color:#d4d4d4;}
+.section table td.path {width:80px;}
+.section table td.date {width:70px; text-align:center; font-style:italic; white-space:nowrap;  font-style:normal; font-size:10px; color:#999;}
+.section table td.en,
+.section table td.jp,
+.section table td.cn {width:22px; text-align:center;}
+.section table td.date del {color:#aaa !important;}
+.section table td.stat {width:30px; text-align:center; font-family:Gulim;}
+.section table td.desc, .section table td.note, .section table td.history {width:auto; font-style:italic;}
+.section table td ul {list-style:none; margin:0; padding:0 20px; font-style:italic;}
+.section table td em {color:#c82026;}
+.section table td em.blue {color:#69f;}
+.section table td.gray {background:#e3e3e3;}
+.section table tr.overcoloring {background:#f6f6f6 !important;}
+.section table tr.today {background:#f7f1f9; /*background:#fbf3f3;*/}
+.section table tr.today .date {color:#444;}
+.section table tbody.remove td {background-color:#ccc;}
+.section table .line-through {text-decoration:line-through}
+
+.section div.note {margin:10px 0;padding:10px;background-color:#f7f7f7;font-weight:bold;}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery.fn.stat = function (options) {
+	var settings = jQuery.extend({
+		total: '.total',
+		title: 'h2.title',
+		content: 'div.content',
+		files: 'tbody:not(.remove) tr',
+		stat: 'td.stat',
+		completed: '●',
+		index: 0,
+		openAll: true,
+		speed: 'fast'
+	}, options),
+	all_sections = this;
+	return this.each(function () {
+		var self = this,
+			$self = $(self),
+			title_text = [],
+			completed = 0;
+		self.section_title = $(settings.title, $self);
+		self.content = $(settings.content, $self);
+		self.files = $(settings.files, $self);
+		self.files.each(function () {
+			var stat = $(settings.stat, this);
+			stat.each(function () {
+				var text = $(this).text();
+				if (text && (text === settings.completed)) {
+					completed++;
+				}
+			});
+		});
+		title_text = [self.section_title.text(), '(',completed,'/',self.files.length,')',' ',': 진행율',Math.round(completed/self.files.length*100),'%',];
+		self.section_title.text(title_text.join(''));
+		self.section_title.bind('click', function () {
+			self.content.slideToggle();
+		});
+
+		//total
+		var completedAll = 0;
+		$(settings.stat).each(function () {
+			var text = $(this).text();
+			if (text && (text == settings.completed)) {
+				completedAll++;
+			}
+		});
+		$(settings.total).text('Total : '+completedAll+'/'+$(settings.files).length+'pages (전체진행율'+Math.round(completedAll/$(settings.files).length*100)+'%)');
+	});
+};
+
+$(document).ready(function () {
+	$('div.section').stat();
+
+	//over-coloring
+	$('div.section tbody tr').mouseover(function() {
+		$(this).addClass('overcoloring');
+	}).mouseout(function() {
+		$(this).removeClass('overcoloring');
+	});
+	autoLink();
+});
+
+var autoLink = function(){
+	jQuery.each($('.section'), function(i){
+		var lan = $(this).find('tbody tr');
+//		var path = '/polyschool/web';
+		var path3 = $(this).find('tbody tr').eq(0).find('.path').text();
+		jQuery.each(lan, function(j){
+			if ($(this).find('.stat').text() == '●' || $(this).find('.stat').text() == '○'){
+
+				var defPath = $(this).find('.path').text(),
+					currentPath = $(this).find('.path').text();
+				if (currentPath == '/' || currentPath == '') {
+					path3 = currentPath;
+				} else {
+					path3 = currentPath;
+				}
+				$(this).find('.file a').attr({
+					'href' : 'html' + path3 + $(this).find('.file a').text() + '.html'
+				});
+			} else {
+				$(this).find('.file a').bind('click', function(){return false;});
+			}
+		});
+	});
+};
+</script>
+</head>
+<body>
+<div class="header">
+	<h1>:: KCR 2023<strong>&gt; FILE LIST</strong></h1>
+	<ul class="nav">
+		<li><a href="https://virtual.kcr4u.org/list.html" class="on">KCR 2023 PC</a></li>
+		<li><a href="https://mobile.virtual.kcr4u.org/list.html">KCR 2023 모바일</a></li>
+	</ul>
+<!--
+ 	<ul class="nav-otherlink">
+		<li><a href="../admin/index.html" class="on">Admin LIST</a></li>
+	</ul>
+	 -->
+<dl class="rule">
+	<dt>웹퍼블리싱 정보</dt>
+	<dd>
+		<ul>
+			<li>웹퍼블리셔 : 주서희 code2@m2community.co.kr</li>
+			<li>HTML 문서정보 : xHTML / utf-8 / IE9+</li>
+			<li>언어 설정 : <strong>lang="ko" xml:lang="ko"</strong></li>
+			<li>웹사이트 주소 : <a href="https://virtual.kcr4u.org/" target="_blank" title="새 창 열림">https://virtual.kcr4u.org/</a></li>
+		</ul>
+	</dd>
+</dl>
+<dl class="rule">
+	<dt>작업현황판 작성 규칙</dt>
+	<dd>
+		<ul>
+			<li>상태표기 :  '△'(작업중 대기) , '○'(부분완료) , '●'(완료) 중 알맞은 것으로 표기. ('●'(완료) 표기부터 개발작업 가능)</li>
+			<li>날짜의 형식은 yyyy-mm-dd 으로 하며, html파일 수정내역이 있을 경우, 최초작성일('●'(완료)일 기준)은 남겨두고 옆에 마지막 수정일자를 표기. (ex. <del>2014-04-26</del> 2014-05-16)</li>
+		</ul>
+	</dd>
+</dl>
+<p class="total"></p>
+<div class="body">
+
+<!--
+	<div class="section">
+		<h2 class="title">Index</h2>
+		<div class="content">
+			<table border="1">
+				<thead>
+					<tr>
+						<th scope="col">2depth</th>
+						<th scope="col">3depth</th>
+						<th scope="col">4depth or tab</th>
+						<th scope="col">tab one page</th>
+						<th scope="col">path</th>
+						<th scope="col">file</th>
+						<th scope="col" title="△ :대기 / ○ :부분완료 / ● :완료">state</th>
+						<th scope="col">date</th>
+						<th scope="col">note</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="tit">메인</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="path">/main/</td>
+						<td class="file"><a target="_blank" href="#">KPS_Main_01</a></td>
+						<td class="stat">○</td>
+						<td class="date"></td>
+						<td class="note"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+-->
+	<div class="section">
+		<h2 class="title">KCR 2023 PC </h2>
+		<div class="content">
+			<table border="1">
+				<thead>
+					<tr>
+						<th scope="col">2depth</th>
+						<th scope="col">3depth</th>
+						<th scope="col">4depth or tab</th>
+						<th scope="col">tab one page</th>
+						<th scope="col">path</th>
+						<th scope="col">file</th>
+						<th scope="col" title="△ :대기 / ○ :부분완료 / ● :완료">state</th>
+						<th scope="col">date</th>
+						<th scope="col">note</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="tit">서브 레이아웃</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="path">/</td>
+						<td class="file"><a target="_blank" href="#">sub</a></td>
+						<td class="stat">●</td>
+						<td class="date"></td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit">메인</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="path">/</td>
+						<td class="file"><a target="_blank" href="#">index</a></td>
+						<td class="stat">●</td>
+						<td class="date"></td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit">Intro</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="path">/</td>
+						<td class="file"><a target="_blank" href="#">intro</a></td>
+						<td class="stat">●</td>
+						<td class="date"></td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit" rowspan="2">Live Session</td>
+						<td>4개</td>
+						<td></td>
+						<td></td>
+						<td class="path">/</td>
+						<td class="file"><a target="_blank" href="#">roomA</a></td>
+						<td class="stat">●</td>
+						<td class="date"></td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td>3개</td>
+						<td></td>
+						<td></td>
+						<td class="path">/</td>
+						<td class="file"><a target="_blank" href="#">roomB</a></td>
+						<td class="stat">●</td>
+						<td class="date"></td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit" rowspan="2">sponsor</td>
+						<td>sponsor</td>
+						<td></td>
+						<td></td>
+						<td class="path">/</td>
+						<td class="file"><a target="_blank" href="#">sponsor</a></td>
+						<td class="stat">●</td>
+						<td class="date"></td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td>Technical Exhibition</td>
+						<td></td>
+						<td></td>
+						<td class="path">/</td>
+						<td class="file"><a target="_blank" href="#">exhibitaion</a></td>
+						<td class="stat">●</td>
+						<td class="date"></td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit">[팝업] Logout</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="path">/</td>
+						<td class="file"><a target="_blank" href="#">popup_logout</a></td>
+						<td class="stat">●</td>
+						<td class="date"></td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit">[팝업] Notice</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="path">/</td>
+						<td class="file"><a target="_blank" href="#">popup_notice</a></td>
+						<td class="stat">●</td>
+						<td class="date"></td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit">[팝업] FAQ</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="path">/</td>
+						<td class="file"><a target="_blank" href="#">popup_faq</a></td>
+						<td class="stat">●</td>
+						<td class="date"></td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit">[팝업] Forgotten your password?</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="path">/</td>
+						<td class="file"><a target="_blank" href="#">popup_pwd</a></td>
+						<td class="stat">●</td>
+						<td class="date"></td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit">[메일] 메일 템플릿</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="path">/</td>
+						<td class="file"><a target="_blank" href="#">mail</a></td>
+						<td class="stat">●</td>
+						<td class="date"></td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit">Exhibition QR Event</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="path">/</td>
+						<td class="file"><a target="_blank" href="#">event</a></td>
+						<td class="stat">●</td>
+						<td class="date"><em>2023-08-29</em></td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit" rowspan="2">[메일] 행사 정보</td>
+						<td>한국어</td>
+						<td></td>
+						<td></td>
+						<td class="path">/</td>
+						<td class="file"><a target="_blank" href="#">mail_kor</a></td>
+						<td class="stat">●</td>
+						<td class="date">2023-09-07</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td>영어</td>
+						<td></td>
+						<td></td>
+						<td class="path">/</td>
+						<td class="file"><a target="_blank" href="#">mail_eng</a></td>
+						<td class="stat">●</td>
+						<td class="date">2023-09-07</td>
+						<td class="note"></td>
+					</tr>
+<!--
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="path">/</td>
+						<td class="file"><a target="_blank" href="#">sub</a></td>
+						<td class="stat">○</td>
+						<td class="date"></td>
+						<td class="note"></td>
+					</tr>
+ -->
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+
+</div>
+</body>
+</html>

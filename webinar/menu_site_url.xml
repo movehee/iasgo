@@ -1,0 +1,42 @@
+﻿<krpano>
+	
+	<!--
+	[Site 연결 방]
+	아래의 '해당URL'로 입력후 서버에 파일 'menu_site_url.xml'을 적용하시면 됩니다.
+	※ openurl('해당URL', _blank);
+	*기본 팁중 URL 주소안에 '&'의 경우 '&amp;'로 주소 표기를 하셔야 됩니다.
+
+	[새창속성]
+	① _blank - 새로운 브라우저 창에서 생성
+	② _top - 현재 브라우저 창에서 생성
+	-->
+	
+	<action name="menu_site_url">
+		<!--       live session      --> set(layer[intro_icon_1].site_go, openurl('https://virtual.aocr2022.org/session/', _top););
+        <!--         e-poster        --> set(layer[intro_icon_2].site_go, openurl('https://virtual.aocr2022.org/poster/', _top););
+		<!--   technical exhibition  --> set(layer[intro_icon_3].site_go, openurl('https://virtual.aocr2022.org/booth/', _top););
+		<!--         my page         --> set(layer[intro_icon_4].site_go, openurl('https://virtual.aocr2022.org/mypage/', _top););
+		<!--   program at a glance   --> set(layer[hs_url_link].program_at_a_glance, openurl('https://virtual.aocr2022.org/program/', _top););
+		<!--      invited quests     --> set(layer[hs_url_link].invited_quests, openurl('https://virtual.aocr2022.org/faculty/', _top););
+		<!--    todays highlights     set(layer[hs_url_link].todays_highlights, js(여기에 팝업 js 코드 삽입););-->
+
+		<!--    todays highlights    --> 
+		<!-- set(layer[hs_url_link].todays_highlights, js(window.open('https://naver.com'));); -->
+		<!--    todays highlights    --> 
+		set(layer[hs_url_link].todays_highlights, js(pop_eblast()););
+		<!-- set(layer[hs_url_link].todays_highlights, js(window.open('https://naver.com', 'naver', 'width=500, height=500, scrollbars=yes'));); -->
+	</action>
+
+
+<!--============================================================================================================================================-->
+
+
+	<!--아래는 수정하지마세요!-->
+	<action name="vimeo_hotspot_url">
+		set(vimeo_hotspot_mode, %1);
+		<!--     Vimeo Left 영상     --> if(vimeo_hotspot_mode == v1, vimeo_hotspot(main_hall_v1, 742899701);); <!--Vimeo위 뒷 숫자만 넣으면 적용-->
+		<!--    Vimeo Right 영상     --> if(vimeo_hotspot_mode == v2, vimeo_hotspot(main_hall_v2, 742899950);); <!--Vimeo위 뒷 숫자만 넣으면 적용-->
+		<!--    Vimeo Right 영상     --> if(vimeo_hotspot_mode == v3, vimeo_hotspot(main_hall_v3, 743335925);); <!--Vimeo위 뒷 숫자만 넣으면 적용-->
+	</action>
+
+</krpano>

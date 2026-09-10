@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 7]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie7"><![endif]-->
+<!--[if IE 8]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie8"><![endif]-->
+<!--[if IE 9]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="kor" xml:lang="kor"><!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>관리자 | 한국자동차공학회</title>	
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link type="text/css" rel="stylesheet" href="/css/common_v3.css" />
+<link type="text/css" rel="stylesheet" href="http://jajaknew.ksae.org/css/ksae_jajak_sub.css" />
+<link type="text/css" rel="stylesheet" href="/admin/css/admin_v2.css" />
+<!--[if lt IE 8]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js">IE7_PNG_SUFFIX=".png";</script>
+<![endif]-->
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+<script type="text/javascript" src="/admin/script/user_admin.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+jQuery(function($) {
+
+});
+//]]>
+</script>
+</head>
+
+<body>
+
+<div class="popupWrap_admin" id="popupUpload">
+	<h1>도서 등록</h1>
+	<div class="popupCon">
+
+		<div class="scrollArea">
+			
+			<div class="formArea">
+				<form id="" name="" action="" method="post">
+					<fieldset>
+						<legend>도서</legend>
+						<table class="tblDef inputTbl">
+							<colgroup>
+								<col style="width: 20%;">
+								<col style="width: 35%;">
+								<col style="width: 15%;">
+								<col style="width: 30%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>메뉴명</th>
+									<td class="multi">
+										<input type="radio" name="" id=""><label for="">학술대회자료</label>
+										<input type="radio" name="" id=""><label for="">단행본</label>
+									</td>
+									<th>판매예정</th>
+									<td class="multi">
+										<input type="radio" name="" id=""><label for="">Yes</label>
+										<input type="radio" name="" id=""><label for="">No</label>
+									</td>
+								</tr>
+								<tr>
+									<th>언어</th>
+									<td colspan="3" class="multi">
+										<input type="radio" name="" id=""><label for="">국문</label>
+										<input type="radio" name="" id=""><label for="">영문</label>
+										<input type="radio" name="" id=""><label for="">혼용</label>
+									</td>
+								</tr>
+								<tr>
+									<th><label for="">도서명(국문)</label></th>
+									<td colspan="3"><input type="text" name="" id="" style="width: 95%;"></td>
+								</tr>
+								<tr>
+									<th><label for="">도서명(영문)</label></th>
+									<td colspan="3"><input type="text" name="" id="" style="width: 95%;"></td>
+								</tr>
+								<tr>
+									<th><label for="">표지등록</label></th>
+									<td colspan="3">
+										<div class="selectFile">
+											<p><input name="" id="fileName" value="Select File" type="text" style="width:300px;"></p>
+											<p class="withIcon"><i class="fas fa-search"></i><input class="opacity0" name="" id="figure_file" onchange="document.getElementById('fileName').value=this.value;" type="file"></p>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label for="">도서내용(국문)</label></th>
+									<td colspan="3"><textarea name="" id="" cols="30" rows="10" style="width: 95%;"></textarea></td>
+								</tr>
+								<tr>
+									<th><label for="">도서내용(영문)</label></th>
+									<td colspan="3"><textarea name="" id="" cols="30" rows="10" style="width: 95%;"></textarea></td>
+								</tr>
+								<tr>
+									<th><label for="">출판사</label></th>
+									<td><input type="text" name="" id="" style="width: 150px;"></td>
+									<th><label for="">저자</label></th>
+									<td><input type="text" name="" id="" style="width: 150px;"></td>
+								</tr>
+								<tr>
+									<th><label for="">판매가격</label></th>
+									<td><input type="text" name="" id="" style="width: 100px;"> <span>원</span></td>
+									<th><label for="">재고(권)</label></th>
+									<td><input type="text" name="" id="" style="width: 100px;"></td>
+								</tr>
+								<tr>
+									<th><label for="">개인</label></th>
+									<td><input type="text" name="" id="" style="width: 100px;"> <span>원</span></td>
+									<th><label for="">법인</label></th>
+									<td><input type="text" name="" id="" style="width: 100px;"> <span>원</span></td>
+								</tr>
+								<tr>
+									<th><label for="">자료이용</label></th>
+									<td><input type="text" name="" id="" style="width: 100px;"> <span>원</span></td>
+									<th><label for="">영문</label></th>
+									<td><input type="text" name="" id="" style="width: 100px;"> <span>달러</span></td>
+								</tr>
+							</tbody>
+						</table>
+
+
+						<div class="btn btnArea">
+							<input type="submit" value="등록" class="btnDef">
+						</div>
+					</fieldset>
+				</form>
+			</div>
+
+		</div>
+		<!-- //scrollArea -->
+	</div>
+	<p class="close"><a href="#" title="팝업창 닫기">X</a></p>
+</div>
+
+</body>
+</html>

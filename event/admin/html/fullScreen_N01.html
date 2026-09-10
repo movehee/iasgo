@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 7]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie7"><![endif]-->
+<!--[if IE 8]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie8"><![endif]-->
+<!--[if IE 9]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="kor" xml:lang="kor"><!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<title>관리자</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1" />
+<link type="text/css" rel="stylesheet" href="/admin/css/common_v2.css" />
+<link type="text/css" rel="stylesheet" href="/admin/css/fullScreen.css" />
+<link type="text/css" rel="stylesheet" href="/admin/css/feedback.css" />
+<!--[if lt IE 8]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js">IE7_PNG_SUFFIX=".png";</script>
+<![endif]-->
+
+<link href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" rel="stylesheet">
+<script src="//code.jquery.com/jquery-1.11.1.js"></script>
+<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+jQuery(function($) {
+	$("div.wrapper, div.question").outerHeight($(window).height());
+	$("div.wrapper").outerWidth($(window).width());
+	$("div.fullScreen").outerHeight($("div.wrapper").height());
+
+	var rePaddingL = $("div.question").outerWidth() + 40;
+	$("div.fullScreen").css({"padding-left":rePaddingL})
+
+});
+//]]>
+</script>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+	<div class="fullScreen">
+
+		<div class="question">
+			<div class="img"><img src="/admin/image/sample.jpg" alt=""></div>
+			<div class="text">
+				전교통동맥 뇌동맥류 수술 후  시행한 영상 검사에서 보일 수 있는 가장 가능성 높은 소견은 P-com An.환자의 수술사진이다. proximal control 이러한 모양을 보이는 비파열 동맥류 환자에 대한 치료를 고려할 때 가장 타당한 것은 ?
+			</div>
+		</div>
+
+		<div class="answer">
+			<dl class="option">
+				<dt>10mm 이하 이므로 경과를 관찰한다.</dt>
+				<dd>
+					<div class="graphBar"><div style="width:30%;" class="point"><span>30%</span></div></div>
+				</dd>
+			</dl>
+
+			<dl class="option">
+				<dt>Giant thrombosed aneurysm이므로 proximal occlusion 으로 치료 한다.</dt>
+				<dd>
+					<div class="graphBar"><div style="width:30%;"><span>30%</span></div></div>
+				</dd>
+			</dl>
+
+			<dl class="option">
+				<dt>Dissection이므로 bypass 후 trapping 으로 치료한다.</dt>
+				<dd>
+					<div class="graphBar"><div style="width:30%;"><span>30%</span></div></div>
+				</dd>
+			</dl>
+
+			<dl class="option">
+				<dt>Direct clipping 시 ACP 제거가 필요하다.</dt>
+				<dd class="graph">
+					<div class="graphBar"><div style="width:30%;"><span>30%</span></div></div>
+				</dd>
+			</dl>
+
+			<dl class="option">
+				<dt>Median artery of corpus callosum시 Fenestarated A2 부분에서 Dissection 하므로 proximal occlusion 으로 치료 한다.</dt>
+				<dd>
+					<div class="graphBar"><div style="width:30%;"><span>30%</span></div></div>
+				</dd>
+			</dl>
+
+
+			<dl class="option">
+				<dt>10mm 이하 이므로 경과를 관찰한다.</dt>
+				<dd>
+					<div class="graphBar"><div style="width:30%;"><span>30%</span></div></div>
+				</dd>
+			</dl>
+
+
+		</div>
+		<!-- //answer -->
+
+
+		<div class="util">
+			<a href="#" class="start"><img src="/admin/image/icon_start.png" alt=""> START</a>
+
+			<a href="#" class="prev"><i class="fas fa-angle-left" title="이전"></i></a>
+			<a href="#" class="next"><i class="fas fa-angle-right" title="다음"></i></a>
+		</div>
+
+	</div>
+	<!-- //fullScreen -->
+
+</div>
+<!-- //wrapper -->
+
+
+
+</body>
+</html>

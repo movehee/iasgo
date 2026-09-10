@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Digital-7';
+  src: url('fonts/Digital-7.svg#Digital-7') format('svg'),
+       url('fonts/Digital-7.ttf') format('truetype'),
+       url('fonts/Digital-7.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Digital7-1e1Z';
+  src: url('fonts/Digital7-1e1Z.eot');
+  src: url('fonts/Digital7-1e1Z.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Digital7-1e1Z.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Digital-7Italic';
+  src: url('fonts/Digital-7Italic.svg#Digital-7Italic') format('svg'),
+       url('fonts/Digital-7Italic.ttf') format('truetype'),
+       url('fonts/Digital-7Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Digital7Italic-RBM3';
+  src: url('fonts/Digital7Italic-RBM3.eot');
+  src: url('fonts/Digital7Italic-RBM3.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Digital7Italic-RBM3.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Digital-7Mono';
+  src: url('fonts/Digital-7Mono.svg#Digital-7Mono') format('svg'),
+       url('fonts/Digital-7Mono.ttf') format('truetype'),
+       url('fonts/Digital-7Mono.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Digital7Mono-B1g5';
+  src: url('fonts/Digital7Mono-B1g5.eot');
+  src: url('fonts/Digital7Mono-B1g5.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Digital7Mono-B1g5.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Digital-7MonoItalic';
+  src: url('fonts/Digital-7MonoItalic.svg#Digital-7MonoItalic') format('svg'),
+       url('fonts/Digital-7MonoItalic.ttf') format('truetype'),
+       url('fonts/Digital-7MonoItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Digital7Monoitalic-8xKz';
+  src: url('fonts/Digital7Monoitalic-8xKz.eot');
+  src: url('fonts/Digital7Monoitalic-8xKz.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Digital7Monoitalic-8xKz.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

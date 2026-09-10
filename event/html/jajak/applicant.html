@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 7]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie7"><![endif]-->
+<!--[if IE 8]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie8"><![endif]-->
+<!--[if IE 9]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="kor" xml:lang="kor"><!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>관리자 | 한국자동차공학회</title>	
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link type="text/css" rel="stylesheet" href="/css/common_v3.css" />
+<link type="text/css" rel="stylesheet" href="http://jajaknew.ksae.org/css/ksae_jajak_sub.css" />
+<link type="text/css" rel="stylesheet" href="/admin/css/admin_v2.css" />
+<!--[if lt IE 8]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js">IE7_PNG_SUFFIX=".png";</script>
+<![endif]-->
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+<script type="text/javascript" src="/admin/script/user_admin.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+jQuery(function($) {
+
+});
+//]]>
+</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+	<div id="headerWrap">
+		<div>
+			<dl id="skipNavi">
+				<dt>Skip Navigation</dt>
+				<dd><a href="#container">Skip to contents</a></dd>
+			</dl>
+
+			
+			<h1><a href="/"><img src="/admin/image/header_logo.png" alt="한국자동차공학회"></a></h1>  
+
+			<ul id="gnb">
+				<li><a href="#">온라인 참가신청</a></li>
+			</ul>
+
+			<dl class="otherAdmin">
+				<dt><a href="#" class="trigger">대학생 자작자동차대회<span>관리자</span></a></dt>
+				<dd class="toggleCon">
+					<ul>
+						<li><a href="#">한국자동차공학회 관리자</a></li>
+						<li><a href="#">한국자동차공학회 학술대회 관리자</a></li>
+						<li><a href="#">대학생 자작자동차대회 관리자</a></li>
+					</ul>
+				</dd>
+			</dl>
+
+			<ul class="headerUtil">
+				<li>접속계정 : <strong>엠투커뮤니케이션 (m2comm)</strong></li>
+				<li><a href="#">한국자동차공학회 HOME</a></li>
+				<li><a href="#">Logout</a></li>
+				<li><a href="#" title="관리자 설정" class="setting"><i class="fas fa-user-cog"></i></a></li>
+				<li><a href="#" id="changeLayout" class="bg">와이드화면 전환하기</a></li>
+			</ul>
+		</div>
+    </div> 
+	<!-- //header -->
+	<hr class="hidden" />
+
+
+
+
+    
+	<!--전체보기일 경우 class="wide" 추가 -->
+    <div id="container" >
+
+		<div class="titArea">
+			<h2 class="pageTit">온라인 참가 신청관리</h2>
+
+			<div id="gnbSearch" class="floatArea">
+				<div class="formArea">
+					<form id="" name="" action="" method="post">
+						<fieldset>
+							<legend>전체 검색</legend>
+							<dl>
+								<dt class="hidden">구분</dt>
+								<dd>
+									<select name="" id="">
+										<option value="">선택</option>
+									</select>
+								</dd>
+								<dt class="hidden">키워드</dt>
+								<dd><input type="text" name="" id=""></dd>
+							</dl>
+							<p class="btn"><i class="fab fa-sistrix"></i><input type="submit" value="검색"></p>
+						</fieldset>
+					</form>
+				</div>
+
+				<p class="close"><a href="#" title="검색창 숨김"><i class="fas fa-times"></i></a></p>
+			</div>
+			<!-- //gnbSearch -->
+
+		</div>
+		<!-- //titArea -->
+
+    	<div class="contents">
+
+
+
+
+
+		<div class="searchArea">
+			<form id="" name="" action="" method="post">
+				<fieldset>
+					<legend>상세 검색</legend>
+					<dl class="inputArea">
+						<dt class="hidden">접수</dt>
+						<dd>
+							<select name="" id="">
+								<option value="">1차접수</option>
+								<option value="">승인</option>
+								<option value="">확인중</option>
+							</select>
+						</dd>
+						<dt class="hidden">입금</dt>
+						<dd>
+							<select name="" id="">
+								<option value="">입금</option>
+								<option value="">확인</option>
+								<option value="">입금중</option>
+							</select>
+						</dd>
+						<dt class="hidden">키워드</dt>
+						<dd>
+							<select name="" id="">
+								<option value="">학교명</option>
+								<option value="">팀명</option>
+								<option value="">차랑명</option>
+								<option value="">신청자</option>
+							</select>
+							<input type="text" name="" id="">
+						</dd>
+					</dl>
+
+					<div class="btn btnArea">
+						<input type="submit" value="검색" class="btnDef">
+						<input type="reset" value="검색초기화" class="btnGrey">
+					</div>
+				</fieldset>
+			</form>
+		</div>
+
+
+
+
+			<div class="utilArea">
+				<div class="note">
+					<p>* 팀원수는 지도교수를 제외한 인원수입니다.</p>
+					<p class="brief">[Total: <span class="fcRed">31,317</span>명]</p>
+				</div>
+
+				<div class="btn">
+					<a href="#" class="btnDef btnSmall">신청등록</a>
+					<a href="#" class="btnGrey btnSmall">선택삭제</a>
+					<a href="#" class="btnPoint btnSmall">참가자리스트 엑셀다운</a>
+					<a href="#" class="btnPoint btnSmall">참가팀리스트 엑셀다운</a>
+					<select name="" id="">
+						<option value="">30줄</option>
+					</select>
+				</div>
+			</div>
+
+
+			<table class="tblList">
+				<colgroup>
+					<col style="width: 3%;" />
+					<col style="width: 10%;" />
+					<col style="width: 4%;" />
+					<col style="width: *;" />
+					<col style="width: *;" />
+					<col style="width: 4%;" />
+					<col style="width: 6%;" />
+					<col style="width: 4%;" />
+					<col style="width: 4%;" />
+					<col style="width: 6%;" />
+					<col style="width: 6%;" />
+					<col style="width: 6%;" />
+					<col style="width: 6%;" />
+					<col style="width: 4%;" />
+					<col style="width: 4%;" />
+					<col style="width: 6%;" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th><input type="checkbox" name="" id=""></th>
+						<th>학교명</th>
+						<th>구분</th>
+						<th>팀명</th>
+						<th>차량명</th>
+						<th>참가부문</th>
+						<th>신청자</th>
+						<th>핸드폰</th>
+						<th>이메일</th>
+						<th>접수</th>
+						<th>입금</th>
+						<th>드라이버</th>
+						<th>운전면허증</th>
+						<th>소개자료</th>
+						<th>팀원수</th>
+						<th>등록일</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="checkbox" name="" id=""></td>
+						<td>군산대학교</td>
+						<td>본교</td>
+						<td>디셉티콘(Decepticon)</td>
+						<td>BanYa Baja</td>
+						<td>Baja</td>
+						<td>박종보</td>
+						<td><i class="fas fa-mobile-alt" title="010-1234-5678" style="font-size: 1.4em;"></i></td>
+						<td><i class="fas fa-envelope-open-text" title="abcdeage@magbeaekaf.ac.kr" style="font-size: 1.4em;"></i></td>
+						<td>
+							<select name="" id="">
+								<option value="">확인중</option>
+								<option value="">승인</option>
+							</select>
+						</td>
+						<td>
+							<select name="" id="">
+								<option value="">입금중</option>
+								<option value="">확인</option>
+							</select>
+						</td>
+						<td><a href="p_김수환.jpg" title="김수환 프로필사진 다운로드">김수환</a></td>
+						<td><a href="li_김수환.jpg"><i class="fas fa-address-card" title="김수환 운전면허증 다운로드"></i></a></td>
+						<td><a href="intro_가천대학교.hwp"><i class="fas fa-file-alt" title="가천대학교 소개자료 다운로드"></i></a></td>
+						<td>0</td>
+						<td>2019-03-22</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="" id=""></td>
+						<td>군산대학교</td>
+						<td>본교</td>
+						<td>디셉티콘(Decepticon)</td>
+						<td>BanYa Baja</td>
+						<td>Baja</td>
+						<td>박종보</td>
+						<td><i class="fas fa-mobile-alt" title="010-1234-5678" style="font-size: 1.4em;"></i></td>
+						<td><i class="fas fa-envelope-open-text" title="abcdeage@magbeaekaf.ac.kr" style="font-size: 1.4em;"></i></td>
+						<td>
+							<select name="" id="">
+								<option value="">확인중</option>
+								<option value="">승인</option>
+							</select>
+						</td>
+						<td>
+							<select name="" id="">
+								<option value="">입금중</option>
+								<option value="">확인</option>
+							</select>
+						</td>
+						<td>
+							<a href="p_김수환.jpg" title="김수환 프로필사진 다운로드">김수환</a>
+							<a href="p_김수환.jpg" title="김수환 프로필사진 다운로드">김수환</a>
+						</td>
+						<td>
+							<a href="li_김수환.jpg"><i class="fas fa-address-card" title="김수환 운전면허증 다운로드"></i></a>
+							<a href="li_김수환.jpg"><i class="fas fa-address-card" title="김수환 운전면허증 다운로드"></i></a>
+						</td>
+						<td><a href="intro_가천대학교.hwp"><i class="fas fa-file-alt" title="가천대학교 소개자료 다운로드"></i></a></td>
+						<td>0</td>
+						<td>2019-03-22</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<ul class="pager">
+				<li class="first"><a href="#"><img alt="처음" src="/image/icon/block_prev.gif"></a></li>
+				<li class="prev"><a href="#"><img alt="이전" src="/image/icon/prev.gif"></a></li>
+				<li><a class="on" href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">6</a></li>
+				<li><a href="#">7</a></li>
+				<li><a href="#">8</a></li>
+				<li><a href="#">9</a></li>
+				<li><a href="#">10</a></li>
+				<li class="next"><a href="#"><img alt="다음" src="/image/icon/next.gif"></a></li>
+				<li class="last"><a href="#"><img alt="마지막" src="/image/icon/block_next.gif"></a></li>
+			</ul>
+
+		
+        </div> <!-- //contents -->
+		
+
+    
+    </div> 
+    <!-- //container -->
+
+	<hr class="hidden" />
+
+	<div id="footerWrap">
+		<p>Copyright © by The Korean Society of Automotive Engineers. All rights reserved.</p>
+	</div> <!-- //footerWrap -->
+
+	
+	
+	
+</div> <!-- //wrapper -->
+
+
+</body>
+</html>

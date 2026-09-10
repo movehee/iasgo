@@ -1,0 +1,44 @@
+<?php
+	$_DID['depart'] = array(
+		"1"=>array(
+			"title"=>"소화기",
+			"number"=>"001-040"
+		),
+		"5"=>array(
+			"title"=>"순환기",
+			"number"=>"041-062"
+		),
+		"7"=>array(
+			"title"=>"호흡기",
+			"number"=>"063-075"
+		),
+		"9"=>array(
+			"title"=>"내분비-대사",
+			"number"=>"076-083"
+		),
+		"11"=>array(
+			"title"=>"신장",
+			"number"=>"084-096"
+		),
+		"13"=>array(
+			"title"=>"혈액종양",
+			"number"=>"097-107"
+		),
+		"15"=>array(
+			"title"=>"감염",
+			"number"=>"108-119"
+		),
+		"17"=>array(
+			"title"=>"알레르기",
+			"number"=>"120-122"
+		),
+		"19"=>array(
+			"title"=>"류마티스",
+			"number"=>"123-127"
+		),
+		"21"=>array(
+			"title"=>"노년내과",
+			"number"=>"128"
+		)
+	) 
+?>

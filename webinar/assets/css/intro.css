@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* =====================================
+
+	* intro
+    
+====================================== */
+html:has(.intro),
+body:has(.intro){
+    overflow-y: hidden;
+    overflow-x: auto;
+    width: 100%;
+    min-width: 1200px;
+    height: 100vh;
+}
+.wrap.intro{
+    width: 100%;
+    height: 100%;
+}
+.intro .inner-layer{
+    min-width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.intro-container{
+    width: 100%;
+    height: 100%;
+}
+.intro-contents{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.intro-contents01{
+    background-image: url('../image/intro/bg_intro.png');
+}
+/* .intro-contents02{
+    background-image: url('../image/intro/bg_intro02.png');
+} */
+.intro-container .slick-track,
+.intro-container .slick-list{
+    height: 100%;
+}
+.intro-contents.slick-slide{
+    display: flex;
+}
+.intro-container .slick-dots{
+    position: absolute;
+    top: 100px;
+    left: calc((100% - 1200px)/2);
+    text-align: center;
+}
+.intro-container .slick-dots > li{
+    display: inline-block;
+    vertical-align: top;
+}
+.intro-container .slick-dots > li button{
+    overflow: hidden;
+    width: 12px;
+    height: 12px;
+    margin: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-indent: -9999em;
+}
+.intro-container .slick-dots > li.slick-active button{
+    width: 32px;
+    background-color: #e21986;
+    border-radius: 30px;
+}
+.intro-contents p{
+    margin-top: 50px;
+}
+.intro-contents .inner-layer{
+    position: relative;
+    z-index: 1;
+}
+.img-logo{
+    position: absolute;
+    top: -110px;
+    right: 0;
+    z-index: -1;
+}
+.intro-contents .btn-wrap{
+    margin-top: 5vw;
+}
+.btn.btn-intro{
+    min-width: 420px;
+    padding: 45px 35px;
+    margin: 0 16px;
+    border-radius: 100px;
+    background-color: #00AEEF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #fff;
+    transition: 0.3s ease;
+}
+.btn-intro + .btn-intro{
+    background-color: #24B0BF;
+}
+
+.intro-tit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.btn-intro:hover{
+    transform: translateY(-10px);
+}

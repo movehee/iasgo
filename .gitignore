@@ -39,3 +39,7 @@ webinar/asset/congress/file/*.pdf
 webinar/html_/
 webinar/html_230728/
 webinar/html_240328/
+
+# Local auth (do not commit)
+.git-credentials
+.ssh/
